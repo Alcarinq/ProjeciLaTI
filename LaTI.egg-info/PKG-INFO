@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: LaTI
+Version: 1.0
+Summary: LaTI
+Home-page: UNKNOWN
+Author: Marcin Misztal
+Author-email: 91mmisztal@gmail.pl
+License: UNKNOWN
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Keywords: LaTI
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Framework :: Pyramid
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: WSGI :: Application

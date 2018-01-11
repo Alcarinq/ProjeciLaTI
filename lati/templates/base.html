@@ -1,0 +1,25 @@
+# -*- coding: utf-8 -*-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="theme-color" content="#fff"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Wypożyczania sprzętu Wyoski Stok" />
+	<meta name="author" content="Marcin Misztal" />
+
+	% for url in webassets(request, 'css'):
+	<link rel="stylesheet" type="text/css" href="${url}" />
+	% endfor
+
+	<title>Wypożyczania sprzętu Wyoski Stok - <%block name="headerTitle"></%block></title>
+</head>
+
+<body ng-app="latiApp" class="ng-cloak">
+	<%block name="container"></%block>
+	
+	% for url in webassets(request, 'jslibraries'):
+	<script type="text/javascript" src="${url}"></script>
+	% endfor
+</body>
+</html>

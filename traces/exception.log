@@ -1,0 +1,2667 @@
+2018-01-07 22:11:30,105 
+
+'http://localhost:6001/'
+
+ENVIRONMENT
+
+{'HTTP_ACCEPT': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+ 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, br',
+ 'HTTP_ACCEPT_LANGUAGE': 'en-US,en;q=0.9',
+ 'HTTP_CACHE_CONTROL': 'max-age=0',
+ 'HTTP_CONNECTION': 'keep-alive',
+ 'HTTP_HOST': 'localhost:6001',
+ 'HTTP_REFERER': 'http://localhost:6001/',
+ 'HTTP_UPGRADE_INSECURE_REQUESTS': '1',
+ 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36 OPR/50.0.2762.45',
+ 'PATH_INFO': '/',
+ 'QUERY_STRING': '',
+ 'REMOTE_ADDR': '127.0.0.1',
+ 'REQUEST_METHOD': 'GET',
+ 'SCRIPT_NAME': '',
+ 'SERVER_NAME': 'ALCARINPC',
+ 'SERVER_PORT': '6001',
+ 'SERVER_PROTOCOL': 'HTTP/1.1',
+ 'SERVER_SOFTWARE': 'waitress',
+ 'webob._cache_control': ('max-age=0', <CacheControl 'max-age=0'>),
+ 'webob._parsed_cookies': ({}, ''),
+ 'webob._parsed_query_vars': (GET([]), ''),
+ 'wsgi.errors': <open file '<stderr>', mode 'w' at 0x04E0D0D0>,
+ 'wsgi.file_wrapper': <class 'waitress.buffers.ReadOnlyFileBasedBuffer'>,
+ 'wsgi.input': <_io.BytesIO object at 0x0748F300>,
+ 'wsgi.multiprocess': False,
+ 'wsgi.multithread': True,
+ 'wsgi.run_once': False,
+ 'wsgi.url_scheme': 'http',
+ 'wsgi.version': (1, 0)}
+
+
+PARAMETERS
+
+NestedMultiDict([])
+
+
+UNAUTHENTICATED USER
+
+None
+
+Traceback (most recent call last):
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\tweens.py", line 22, in excview_tween
+    response = handler(request)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\router.py", line 155, in handle_request
+    view_name
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\view.py", line 612, in _call_view
+    response = view_callable(context, request)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\viewderivers.py", line 461, in rendered_view
+    request, result, view_inst, context)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\renderers.py", line 432, in render_view
+    return self.render_to_response(response, system, request=request)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\renderers.py", line 455, in render_to_response
+    result = self.render(value, system_values, request=request)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\renderers.py", line 451, in render
+    result = renderer(value, system_values)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid_mako-1.0.2-py2.7.egg\pyramid_mako\__init__.py", line 156, in __call__
+    reraise(MakoRenderingException(errtext), None, exc_info[2])
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid_mako-1.0.2-py2.7.egg\pyramid_mako\__init__.py", line 148, in __call__
+    result = template.render_unicode(**system)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\template.py", line 471, in render_unicode
+    as_unicode=True)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 838, in _render
+    **_kwargs_for_callable(callable_, data))
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 873, in _render_context
+    _exec_template(inherit, lclcontext, args=args, kwargs=kwargs)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 899, in _exec_template
+    callable_(context, *args, **kwargs)
+  File "lati_templates_main_html", line 45, in render_body
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 748, in _include_file
+    template = _lookup_template(context, uri, calling_uri)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 802, in _lookup_template
+    return lookup.get_template(uri)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid_mako-1.0.2-py2.7.egg\pyramid_mako\__init__.py", line 71, in get_template
+    if asset.exists():
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\path.py", line 412, in exists
+    return self.pkg_resources.resource_exists(self.pkg_name, self.path)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pkg_resources\__init__.py", line 1215, in resource_exists
+    return get_provider(package_or_requirement).has_resource(resource_name)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pkg_resources\__init__.py", line 440, in get_provider
+    __import__(moduleOrReq)
+MakoRenderingException: 
+
+Traceback (most recent call last):
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid_mako-1.0.2-py2.7.egg\pyramid_mako\__init__.py", line 148, in __call__
+    result = template.render_unicode(**system)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\template.py", line 471, in render_unicode
+    as_unicode=True)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 838, in _render
+    **_kwargs_for_callable(callable_, data))
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 873, in _render_context
+    _exec_template(inherit, lclcontext, args=args, kwargs=kwargs)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 899, in _exec_template
+    callable_(context, *args, **kwargs)
+  File "e:\!workspace\p\lati\projecilati\lati\templates\main.html", line 42, in render_body
+    <%include file="dls:templates/forms/confirmform.html"/>
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 748, in _include_file
+    template = _lookup_template(context, uri, calling_uri)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 802, in _lookup_template
+    return lookup.get_template(uri)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid_mako-1.0.2-py2.7.egg\pyramid_mako\__init__.py", line 71, in get_template
+    if asset.exists():
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\path.py", line 412, in exists
+    return self.pkg_resources.resource_exists(self.pkg_name, self.path)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pkg_resources\__init__.py", line 1215, in resource_exists
+    return get_provider(package_or_requirement).has_resource(resource_name)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pkg_resources\__init__.py", line 440, in get_provider
+    __import__(moduleOrReq)
+ImportError: No module named dls
+
+2018-01-07 22:12:56,677 
+
+'http://localhost:6001/'
+
+ENVIRONMENT
+
+{'HTTP_ACCEPT': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+ 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, br',
+ 'HTTP_ACCEPT_LANGUAGE': 'en-US,en;q=0.9',
+ 'HTTP_CACHE_CONTROL': 'max-age=0',
+ 'HTTP_CONNECTION': 'keep-alive',
+ 'HTTP_HOST': 'localhost:6001',
+ 'HTTP_REFERER': 'http://localhost:6001/',
+ 'HTTP_UPGRADE_INSECURE_REQUESTS': '1',
+ 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36 OPR/50.0.2762.45',
+ 'PATH_INFO': '/',
+ 'QUERY_STRING': '',
+ 'REMOTE_ADDR': '127.0.0.1',
+ 'REQUEST_METHOD': 'GET',
+ 'SCRIPT_NAME': '',
+ 'SERVER_NAME': 'ALCARINPC',
+ 'SERVER_PORT': '6001',
+ 'SERVER_PROTOCOL': 'HTTP/1.1',
+ 'SERVER_SOFTWARE': 'waitress',
+ 'webob._cache_control': ('max-age=0', <CacheControl 'max-age=0'>),
+ 'webob._parsed_cookies': ({}, ''),
+ 'webob._parsed_query_vars': (GET([]), ''),
+ 'wsgi.errors': <open file '<stderr>', mode 'w' at 0x04E0D0D0>,
+ 'wsgi.file_wrapper': <class 'waitress.buffers.ReadOnlyFileBasedBuffer'>,
+ 'wsgi.input': <_io.BytesIO object at 0x077BAA50>,
+ 'wsgi.multiprocess': False,
+ 'wsgi.multithread': True,
+ 'wsgi.run_once': False,
+ 'wsgi.url_scheme': 'http',
+ 'wsgi.version': (1, 0)}
+
+
+PARAMETERS
+
+NestedMultiDict([])
+
+
+UNAUTHENTICATED USER
+
+None
+
+Traceback (most recent call last):
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\tweens.py", line 22, in excview_tween
+    response = handler(request)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\router.py", line 155, in handle_request
+    view_name
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\view.py", line 612, in _call_view
+    response = view_callable(context, request)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\viewderivers.py", line 461, in rendered_view
+    request, result, view_inst, context)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\renderers.py", line 432, in render_view
+    return self.render_to_response(response, system, request=request)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\renderers.py", line 455, in render_to_response
+    result = self.render(value, system_values, request=request)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\renderers.py", line 451, in render
+    result = renderer(value, system_values)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid_mako-1.0.2-py2.7.egg\pyramid_mako\__init__.py", line 156, in __call__
+    reraise(MakoRenderingException(errtext), None, exc_info[2])
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid_mako-1.0.2-py2.7.egg\pyramid_mako\__init__.py", line 148, in __call__
+    result = template.render_unicode(**system)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\template.py", line 471, in render_unicode
+    as_unicode=True)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 838, in _render
+    **_kwargs_for_callable(callable_, data))
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 872, in _render_context
+    (inherit, lclcontext) = _populate_self_namespace(context, tmpl)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 814, in _populate_self_namespace
+    ret = template.module._mako_inherit(template, context)
+  File "lati_templates_main_html", line 25, in _mako_inherit
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 771, in _inherit_from
+    template = _lookup_template(context, uri, calling_uri)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 802, in _lookup_template
+    return lookup.get_template(uri)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid_mako-1.0.2-py2.7.egg\pyramid_mako\__init__.py", line 71, in get_template
+    if asset.exists():
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\path.py", line 412, in exists
+    return self.pkg_resources.resource_exists(self.pkg_name, self.path)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pkg_resources\__init__.py", line 1215, in resource_exists
+    return get_provider(package_or_requirement).has_resource(resource_name)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pkg_resources\__init__.py", line 440, in get_provider
+    __import__(moduleOrReq)
+MakoRenderingException: 
+
+Traceback (most recent call last):
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid_mako-1.0.2-py2.7.egg\pyramid_mako\__init__.py", line 148, in __call__
+    result = template.render_unicode(**system)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\template.py", line 471, in render_unicode
+    as_unicode=True)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 838, in _render
+    **_kwargs_for_callable(callable_, data))
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 872, in _render_context
+    (inherit, lclcontext) = _populate_self_namespace(context, tmpl)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 814, in _populate_self_namespace
+    ret = template.module._mako_inherit(template, context)
+  File "e:\!workspace\p\lati\projecilati\lati\templates\main.html", line 1, in _mako_inherit
+    # -*- coding: utf-8 -*-
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 771, in _inherit_from
+    template = _lookup_template(context, uri, calling_uri)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 802, in _lookup_template
+    return lookup.get_template(uri)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid_mako-1.0.2-py2.7.egg\pyramid_mako\__init__.py", line 71, in get_template
+    if asset.exists():
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\path.py", line 412, in exists
+    return self.pkg_resources.resource_exists(self.pkg_name, self.path)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pkg_resources\__init__.py", line 1215, in resource_exists
+    return get_provider(package_or_requirement).has_resource(resource_name)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pkg_resources\__init__.py", line 440, in get_provider
+    __import__(moduleOrReq)
+ImportError: No module named dls
+
+2018-01-07 22:13:16,209 
+
+'http://localhost:6001/'
+
+ENVIRONMENT
+
+{'HTTP_ACCEPT': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+ 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, br',
+ 'HTTP_ACCEPT_LANGUAGE': 'en-US,en;q=0.9',
+ 'HTTP_CACHE_CONTROL': 'max-age=0',
+ 'HTTP_CONNECTION': 'keep-alive',
+ 'HTTP_HOST': 'localhost:6001',
+ 'HTTP_REFERER': 'http://localhost:6001/',
+ 'HTTP_UPGRADE_INSECURE_REQUESTS': '1',
+ 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36 OPR/50.0.2762.45',
+ 'PATH_INFO': '/',
+ 'QUERY_STRING': '',
+ 'REMOTE_ADDR': '127.0.0.1',
+ 'REQUEST_METHOD': 'GET',
+ 'SCRIPT_NAME': '',
+ 'SERVER_NAME': 'ALCARINPC',
+ 'SERVER_PORT': '6001',
+ 'SERVER_PROTOCOL': 'HTTP/1.1',
+ 'SERVER_SOFTWARE': 'waitress',
+ 'webob._cache_control': ('max-age=0', <CacheControl 'max-age=0'>),
+ 'webob._parsed_cookies': ({}, ''),
+ 'webob._parsed_query_vars': (GET([]), ''),
+ 'wsgi.errors': <open file '<stderr>', mode 'w' at 0x04E0D0D0>,
+ 'wsgi.file_wrapper': <class 'waitress.buffers.ReadOnlyFileBasedBuffer'>,
+ 'wsgi.input': <_io.BytesIO object at 0x08A1D150>,
+ 'wsgi.multiprocess': False,
+ 'wsgi.multithread': True,
+ 'wsgi.run_once': False,
+ 'wsgi.url_scheme': 'http',
+ 'wsgi.version': (1, 0)}
+
+
+PARAMETERS
+
+NestedMultiDict([])
+
+
+UNAUTHENTICATED USER
+
+None
+
+Traceback (most recent call last):
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\tweens.py", line 22, in excview_tween
+    response = handler(request)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\router.py", line 155, in handle_request
+    view_name
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\view.py", line 612, in _call_view
+    response = view_callable(context, request)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\viewderivers.py", line 461, in rendered_view
+    request, result, view_inst, context)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\renderers.py", line 432, in render_view
+    return self.render_to_response(response, system, request=request)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\renderers.py", line 455, in render_to_response
+    result = self.render(value, system_values, request=request)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\renderers.py", line 451, in render
+    result = renderer(value, system_values)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid_mako-1.0.2-py2.7.egg\pyramid_mako\__init__.py", line 156, in __call__
+    reraise(MakoRenderingException(errtext), None, exc_info[2])
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid_mako-1.0.2-py2.7.egg\pyramid_mako\__init__.py", line 148, in __call__
+    result = template.render_unicode(**system)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\template.py", line 471, in render_unicode
+    as_unicode=True)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 838, in _render
+    **_kwargs_for_callable(callable_, data))
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 872, in _render_context
+    (inherit, lclcontext) = _populate_self_namespace(context, tmpl)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 814, in _populate_self_namespace
+    ret = template.module._mako_inherit(template, context)
+  File "lati_templates_main_html", line 25, in _mako_inherit
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 771, in _inherit_from
+    template = _lookup_template(context, uri, calling_uri)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 802, in _lookup_template
+    return lookup.get_template(uri)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid_mako-1.0.2-py2.7.egg\pyramid_mako\__init__.py", line 71, in get_template
+    if asset.exists():
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\path.py", line 412, in exists
+    return self.pkg_resources.resource_exists(self.pkg_name, self.path)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pkg_resources\__init__.py", line 1215, in resource_exists
+    return get_provider(package_or_requirement).has_resource(resource_name)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pkg_resources\__init__.py", line 440, in get_provider
+    __import__(moduleOrReq)
+MakoRenderingException: 
+
+Traceback (most recent call last):
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid_mako-1.0.2-py2.7.egg\pyramid_mako\__init__.py", line 148, in __call__
+    result = template.render_unicode(**system)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\template.py", line 471, in render_unicode
+    as_unicode=True)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 838, in _render
+    **_kwargs_for_callable(callable_, data))
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 872, in _render_context
+    (inherit, lclcontext) = _populate_self_namespace(context, tmpl)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 814, in _populate_self_namespace
+    ret = template.module._mako_inherit(template, context)
+  File "e:\!workspace\p\lati\projecilati\lati\templates\main.html", line 1, in _mako_inherit
+    # -*- coding: utf-8 -*-
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 771, in _inherit_from
+    template = _lookup_template(context, uri, calling_uri)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 802, in _lookup_template
+    return lookup.get_template(uri)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid_mako-1.0.2-py2.7.egg\pyramid_mako\__init__.py", line 71, in get_template
+    if asset.exists():
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\path.py", line 412, in exists
+    return self.pkg_resources.resource_exists(self.pkg_name, self.path)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pkg_resources\__init__.py", line 1215, in resource_exists
+    return get_provider(package_or_requirement).has_resource(resource_name)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pkg_resources\__init__.py", line 440, in get_provider
+    __import__(moduleOrReq)
+ImportError: No module named dls
+
+2018-01-07 22:13:26,430 
+
+'http://localhost:6001/'
+
+ENVIRONMENT
+
+{'HTTP_ACCEPT': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+ 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, br',
+ 'HTTP_ACCEPT_LANGUAGE': 'en-US,en;q=0.9',
+ 'HTTP_CACHE_CONTROL': 'max-age=0',
+ 'HTTP_CONNECTION': 'keep-alive',
+ 'HTTP_HOST': 'localhost:6001',
+ 'HTTP_REFERER': 'http://localhost:6001/',
+ 'HTTP_UPGRADE_INSECURE_REQUESTS': '1',
+ 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36 OPR/50.0.2762.45',
+ 'PATH_INFO': '/',
+ 'QUERY_STRING': '',
+ 'REMOTE_ADDR': '127.0.0.1',
+ 'REQUEST_METHOD': 'GET',
+ 'SCRIPT_NAME': '',
+ 'SERVER_NAME': 'ALCARINPC',
+ 'SERVER_PORT': '6001',
+ 'SERVER_PROTOCOL': 'HTTP/1.1',
+ 'SERVER_SOFTWARE': 'waitress',
+ 'webob._cache_control': ('max-age=0', <CacheControl 'max-age=0'>),
+ 'webob._parsed_cookies': ({}, ''),
+ 'webob._parsed_query_vars': (GET([]), ''),
+ 'wsgi.errors': <open file '<stderr>', mode 'w' at 0x04E0D0D0>,
+ 'wsgi.file_wrapper': <class 'waitress.buffers.ReadOnlyFileBasedBuffer'>,
+ 'wsgi.input': <_io.BytesIO object at 0x08BAFC90>,
+ 'wsgi.multiprocess': False,
+ 'wsgi.multithread': True,
+ 'wsgi.run_once': False,
+ 'wsgi.url_scheme': 'http',
+ 'wsgi.version': (1, 0)}
+
+
+PARAMETERS
+
+NestedMultiDict([])
+
+
+UNAUTHENTICATED USER
+
+None
+
+Traceback (most recent call last):
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\tweens.py", line 22, in excview_tween
+    response = handler(request)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\router.py", line 155, in handle_request
+    view_name
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\view.py", line 612, in _call_view
+    response = view_callable(context, request)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\viewderivers.py", line 461, in rendered_view
+    request, result, view_inst, context)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\renderers.py", line 432, in render_view
+    return self.render_to_response(response, system, request=request)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\renderers.py", line 455, in render_to_response
+    result = self.render(value, system_values, request=request)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\renderers.py", line 451, in render
+    result = renderer(value, system_values)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid_mako-1.0.2-py2.7.egg\pyramid_mako\__init__.py", line 156, in __call__
+    reraise(MakoRenderingException(errtext), None, exc_info[2])
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid_mako-1.0.2-py2.7.egg\pyramid_mako\__init__.py", line 148, in __call__
+    result = template.render_unicode(**system)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\template.py", line 471, in render_unicode
+    as_unicode=True)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 838, in _render
+    **_kwargs_for_callable(callable_, data))
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 872, in _render_context
+    (inherit, lclcontext) = _populate_self_namespace(context, tmpl)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 814, in _populate_self_namespace
+    ret = template.module._mako_inherit(template, context)
+  File "lati_templates_main_html", line 25, in _mako_inherit
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 771, in _inherit_from
+    template = _lookup_template(context, uri, calling_uri)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 804, in _lookup_template
+    raise exceptions.TemplateLookupException(str(compat.exception_as()))
+MakoRenderingException: 
+
+Traceback (most recent call last):
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid_mako-1.0.2-py2.7.egg\pyramid_mako\__init__.py", line 148, in __call__
+    result = template.render_unicode(**system)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\template.py", line 471, in render_unicode
+    as_unicode=True)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 838, in _render
+    **_kwargs_for_callable(callable_, data))
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 872, in _render_context
+    (inherit, lclcontext) = _populate_self_namespace(context, tmpl)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 814, in _populate_self_namespace
+    ret = template.module._mako_inherit(template, context)
+  File "e:\!workspace\p\lati\projecilati\lati\templates\main.html", line 1, in _mako_inherit
+    # -*- coding: utf-8 -*-
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 771, in _inherit_from
+    template = _lookup_template(context, uri, calling_uri)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 804, in _lookup_template
+    raise exceptions.TemplateLookupException(str(compat.exception_as()))
+TemplateLookupException: Can not locate template for uri u'lati:templates/base.html'
+
+2018-01-07 22:13:54,286 
+
+'http://localhost:6001/'
+
+ENVIRONMENT
+
+{'HTTP_ACCEPT': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+ 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, br',
+ 'HTTP_ACCEPT_LANGUAGE': 'en-US,en;q=0.9',
+ 'HTTP_CACHE_CONTROL': 'max-age=0',
+ 'HTTP_CONNECTION': 'keep-alive',
+ 'HTTP_HOST': 'localhost:6001',
+ 'HTTP_REFERER': 'http://localhost:6001/',
+ 'HTTP_UPGRADE_INSECURE_REQUESTS': '1',
+ 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36 OPR/50.0.2762.45',
+ 'PATH_INFO': '/',
+ 'QUERY_STRING': '',
+ 'REMOTE_ADDR': '127.0.0.1',
+ 'REQUEST_METHOD': 'GET',
+ 'SCRIPT_NAME': '',
+ 'SERVER_NAME': 'ALCARINPC',
+ 'SERVER_PORT': '6001',
+ 'SERVER_PROTOCOL': 'HTTP/1.1',
+ 'SERVER_SOFTWARE': 'waitress',
+ 'webob._cache_control': ('max-age=0', <CacheControl 'max-age=0'>),
+ 'webob._parsed_cookies': ({}, ''),
+ 'webob._parsed_query_vars': (GET([]), ''),
+ 'wsgi.errors': <open file '<stderr>', mode 'w' at 0x04E0D0D0>,
+ 'wsgi.file_wrapper': <class 'waitress.buffers.ReadOnlyFileBasedBuffer'>,
+ 'wsgi.input': <_io.BytesIO object at 0x08CC4060>,
+ 'wsgi.multiprocess': False,
+ 'wsgi.multithread': True,
+ 'wsgi.run_once': False,
+ 'wsgi.url_scheme': 'http',
+ 'wsgi.version': (1, 0)}
+
+
+PARAMETERS
+
+NestedMultiDict([])
+
+
+UNAUTHENTICATED USER
+
+None
+
+Traceback (most recent call last):
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\tweens.py", line 22, in excview_tween
+    response = handler(request)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\router.py", line 155, in handle_request
+    view_name
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\view.py", line 612, in _call_view
+    response = view_callable(context, request)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\viewderivers.py", line 461, in rendered_view
+    request, result, view_inst, context)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\renderers.py", line 432, in render_view
+    return self.render_to_response(response, system, request=request)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\renderers.py", line 455, in render_to_response
+    result = self.render(value, system_values, request=request)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\renderers.py", line 451, in render
+    result = renderer(value, system_values)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid_mako-1.0.2-py2.7.egg\pyramid_mako\__init__.py", line 156, in __call__
+    reraise(MakoRenderingException(errtext), None, exc_info[2])
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid_mako-1.0.2-py2.7.egg\pyramid_mako\__init__.py", line 148, in __call__
+    result = template.render_unicode(**system)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\template.py", line 471, in render_unicode
+    as_unicode=True)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 838, in _render
+    **_kwargs_for_callable(callable_, data))
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 873, in _render_context
+    _exec_template(inherit, lclcontext, args=args, kwargs=kwargs)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 899, in _exec_template
+    callable_(context, *args, **kwargs)
+  File "lati_templates_base_html", line 32, in render_body
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid_webassets-0.7.1-py2.7.egg\pyramid_webassets\__init__.py", line 128, in assets
+    urls = bundle.urls(env=env)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\webassets-0.9-py2.7.egg\webassets\bundle.py", line 685, in urls
+    urls.extend(bundle._urls(env, extra_filters, *args, **kwargs))
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\webassets-0.9-py2.7.egg\webassets\bundle.py", line 654, in _urls
+    for org, cnt in self.resolve_contents(env):
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\webassets-0.9-py2.7.egg\webassets\bundle.py", line 154, in resolve_contents
+    raise BundleError(e)
+MakoRenderingException: 
+
+Traceback (most recent call last):
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid_mako-1.0.2-py2.7.egg\pyramid_mako\__init__.py", line 148, in __call__
+    result = template.render_unicode(**system)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\template.py", line 471, in render_unicode
+    as_unicode=True)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 838, in _render
+    **_kwargs_for_callable(callable_, data))
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 873, in _render_context
+    _exec_template(inherit, lclcontext, args=args, kwargs=kwargs)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 899, in _exec_template
+    callable_(context, *args, **kwargs)
+  File "e:\!workspace\p\lati\projecilati\lati\templates\base.html", line 20, in render_body
+    % for url in webassets(request, 'css'):
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid_webassets-0.7.1-py2.7.egg\pyramid_webassets\__init__.py", line 128, in assets
+    urls = bundle.urls(env=env)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\webassets-0.9-py2.7.egg\webassets\bundle.py", line 685, in urls
+    urls.extend(bundle._urls(env, extra_filters, *args, **kwargs))
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\webassets-0.9-py2.7.egg\webassets\bundle.py", line 654, in _urls
+    for org, cnt in self.resolve_contents(env):
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\webassets-0.9-py2.7.egg\webassets\bundle.py", line 154, in resolve_contents
+    raise BundleError(e)
+BundleError: 'E:\!Workspace\P\LaTI\ProjeciLaTI\lati\static\css/font-awesome.min.css' does not exist
+
+2018-01-07 22:14:55,115 
+
+'http://localhost:6001/'
+
+ENVIRONMENT
+
+{'HTTP_ACCEPT': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+ 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, br',
+ 'HTTP_ACCEPT_LANGUAGE': 'en-US,en;q=0.9',
+ 'HTTP_CACHE_CONTROL': 'max-age=0',
+ 'HTTP_CONNECTION': 'keep-alive',
+ 'HTTP_HOST': 'localhost:6001',
+ 'HTTP_REFERER': 'http://localhost:6001/',
+ 'HTTP_UPGRADE_INSECURE_REQUESTS': '1',
+ 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36 OPR/50.0.2762.45',
+ 'PATH_INFO': '/',
+ 'QUERY_STRING': '',
+ 'REMOTE_ADDR': '127.0.0.1',
+ 'REQUEST_METHOD': 'GET',
+ 'SCRIPT_NAME': '',
+ 'SERVER_NAME': 'ALCARINPC',
+ 'SERVER_PORT': '6001',
+ 'SERVER_PROTOCOL': 'HTTP/1.1',
+ 'SERVER_SOFTWARE': 'waitress',
+ 'webob._cache_control': ('max-age=0', <CacheControl 'max-age=0'>),
+ 'webob._parsed_cookies': ({}, ''),
+ 'webob._parsed_query_vars': (GET([]), ''),
+ 'wsgi.errors': <open file '<stderr>', mode 'w' at 0x052ED0D0>,
+ 'wsgi.file_wrapper': <class 'waitress.buffers.ReadOnlyFileBasedBuffer'>,
+ 'wsgi.input': <_io.BytesIO object at 0x079D4F30>,
+ 'wsgi.multiprocess': False,
+ 'wsgi.multithread': True,
+ 'wsgi.run_once': False,
+ 'wsgi.url_scheme': 'http',
+ 'wsgi.version': (1, 0)}
+
+
+PARAMETERS
+
+NestedMultiDict([])
+
+
+UNAUTHENTICATED USER
+
+None
+
+Traceback (most recent call last):
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\tweens.py", line 22, in excview_tween
+    response = handler(request)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\router.py", line 155, in handle_request
+    view_name
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\view.py", line 612, in _call_view
+    response = view_callable(context, request)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\viewderivers.py", line 461, in rendered_view
+    request, result, view_inst, context)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\renderers.py", line 432, in render_view
+    return self.render_to_response(response, system, request=request)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\renderers.py", line 455, in render_to_response
+    result = self.render(value, system_values, request=request)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\renderers.py", line 451, in render
+    result = renderer(value, system_values)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid_mako-1.0.2-py2.7.egg\pyramid_mako\__init__.py", line 156, in __call__
+    reraise(MakoRenderingException(errtext), None, exc_info[2])
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid_mako-1.0.2-py2.7.egg\pyramid_mako\__init__.py", line 148, in __call__
+    result = template.render_unicode(**system)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\template.py", line 471, in render_unicode
+    as_unicode=True)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 838, in _render
+    **_kwargs_for_callable(callable_, data))
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 873, in _render_context
+    _exec_template(inherit, lclcontext, args=args, kwargs=kwargs)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 899, in _exec_template
+    callable_(context, *args, **kwargs)
+  File "lati_templates_base_html", line 32, in render_body
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid_webassets-0.7.1-py2.7.egg\pyramid_webassets\__init__.py", line 128, in assets
+    urls = bundle.urls(env=env)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\webassets-0.9-py2.7.egg\webassets\bundle.py", line 685, in urls
+    urls.extend(bundle._urls(env, extra_filters, *args, **kwargs))
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\webassets-0.9-py2.7.egg\webassets\bundle.py", line 654, in _urls
+    for org, cnt in self.resolve_contents(env):
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\webassets-0.9-py2.7.egg\webassets\bundle.py", line 154, in resolve_contents
+    raise BundleError(e)
+MakoRenderingException: 
+
+Traceback (most recent call last):
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid_mako-1.0.2-py2.7.egg\pyramid_mako\__init__.py", line 148, in __call__
+    result = template.render_unicode(**system)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\template.py", line 471, in render_unicode
+    as_unicode=True)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 838, in _render
+    **_kwargs_for_callable(callable_, data))
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 873, in _render_context
+    _exec_template(inherit, lclcontext, args=args, kwargs=kwargs)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 899, in _exec_template
+    callable_(context, *args, **kwargs)
+  File "e:\!workspace\p\lati\projecilati\lati\templates\base.html", line 20, in render_body
+    % for url in webassets(request, 'css'):
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid_webassets-0.7.1-py2.7.egg\pyramid_webassets\__init__.py", line 128, in assets
+    urls = bundle.urls(env=env)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\webassets-0.9-py2.7.egg\webassets\bundle.py", line 685, in urls
+    urls.extend(bundle._urls(env, extra_filters, *args, **kwargs))
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\webassets-0.9-py2.7.egg\webassets\bundle.py", line 654, in _urls
+    for org, cnt in self.resolve_contents(env):
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\webassets-0.9-py2.7.egg\webassets\bundle.py", line 154, in resolve_contents
+    raise BundleError(e)
+BundleError: 'E:\!Workspace\P\LaTI\ProjeciLaTI\lati\static\css/dc.css' does not exist
+
+2018-01-07 22:15:00,950 
+
+'http://localhost:6001/'
+
+ENVIRONMENT
+
+{'HTTP_ACCEPT': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+ 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, br',
+ 'HTTP_ACCEPT_LANGUAGE': 'en-US,en;q=0.9',
+ 'HTTP_CACHE_CONTROL': 'max-age=0',
+ 'HTTP_CONNECTION': 'keep-alive',
+ 'HTTP_HOST': 'localhost:6001',
+ 'HTTP_REFERER': 'http://localhost:6001/',
+ 'HTTP_UPGRADE_INSECURE_REQUESTS': '1',
+ 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36 OPR/50.0.2762.45',
+ 'PATH_INFO': '/',
+ 'QUERY_STRING': '',
+ 'REMOTE_ADDR': '127.0.0.1',
+ 'REQUEST_METHOD': 'GET',
+ 'SCRIPT_NAME': '',
+ 'SERVER_NAME': 'ALCARINPC',
+ 'SERVER_PORT': '6001',
+ 'SERVER_PROTOCOL': 'HTTP/1.1',
+ 'SERVER_SOFTWARE': 'waitress',
+ 'webob._cache_control': ('max-age=0', <CacheControl 'max-age=0'>),
+ 'webob._parsed_cookies': ({}, ''),
+ 'webob._parsed_query_vars': (GET([]), ''),
+ 'wsgi.errors': <open file '<stderr>', mode 'w' at 0x052ED0D0>,
+ 'wsgi.file_wrapper': <class 'waitress.buffers.ReadOnlyFileBasedBuffer'>,
+ 'wsgi.input': <_io.BytesIO object at 0x07B0A990>,
+ 'wsgi.multiprocess': False,
+ 'wsgi.multithread': True,
+ 'wsgi.run_once': False,
+ 'wsgi.url_scheme': 'http',
+ 'wsgi.version': (1, 0)}
+
+
+PARAMETERS
+
+NestedMultiDict([])
+
+
+UNAUTHENTICATED USER
+
+None
+
+Traceback (most recent call last):
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\tweens.py", line 22, in excview_tween
+    response = handler(request)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\router.py", line 155, in handle_request
+    view_name
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\view.py", line 612, in _call_view
+    response = view_callable(context, request)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\viewderivers.py", line 461, in rendered_view
+    request, result, view_inst, context)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\renderers.py", line 432, in render_view
+    return self.render_to_response(response, system, request=request)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\renderers.py", line 455, in render_to_response
+    result = self.render(value, system_values, request=request)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\renderers.py", line 451, in render
+    result = renderer(value, system_values)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid_mako-1.0.2-py2.7.egg\pyramid_mako\__init__.py", line 156, in __call__
+    reraise(MakoRenderingException(errtext), None, exc_info[2])
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid_mako-1.0.2-py2.7.egg\pyramid_mako\__init__.py", line 148, in __call__
+    result = template.render_unicode(**system)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\template.py", line 471, in render_unicode
+    as_unicode=True)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 838, in _render
+    **_kwargs_for_callable(callable_, data))
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 873, in _render_context
+    _exec_template(inherit, lclcontext, args=args, kwargs=kwargs)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 899, in _exec_template
+    callable_(context, *args, **kwargs)
+  File "lati_templates_base_html", line 32, in render_body
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid_webassets-0.7.1-py2.7.egg\pyramid_webassets\__init__.py", line 128, in assets
+    urls = bundle.urls(env=env)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\webassets-0.9-py2.7.egg\webassets\bundle.py", line 685, in urls
+    urls.extend(bundle._urls(env, extra_filters, *args, **kwargs))
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\webassets-0.9-py2.7.egg\webassets\bundle.py", line 654, in _urls
+    for org, cnt in self.resolve_contents(env):
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\webassets-0.9-py2.7.egg\webassets\bundle.py", line 154, in resolve_contents
+    raise BundleError(e)
+MakoRenderingException: 
+
+Traceback (most recent call last):
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid_mako-1.0.2-py2.7.egg\pyramid_mako\__init__.py", line 148, in __call__
+    result = template.render_unicode(**system)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\template.py", line 471, in render_unicode
+    as_unicode=True)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 838, in _render
+    **_kwargs_for_callable(callable_, data))
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 873, in _render_context
+    _exec_template(inherit, lclcontext, args=args, kwargs=kwargs)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 899, in _exec_template
+    callable_(context, *args, **kwargs)
+  File "e:\!workspace\p\lati\projecilati\lati\templates\base.html", line 20, in render_body
+    % for url in webassets(request, 'css'):
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid_webassets-0.7.1-py2.7.egg\pyramid_webassets\__init__.py", line 128, in assets
+    urls = bundle.urls(env=env)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\webassets-0.9-py2.7.egg\webassets\bundle.py", line 685, in urls
+    urls.extend(bundle._urls(env, extra_filters, *args, **kwargs))
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\webassets-0.9-py2.7.egg\webassets\bundle.py", line 654, in _urls
+    for org, cnt in self.resolve_contents(env):
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\webassets-0.9-py2.7.egg\webassets\bundle.py", line 154, in resolve_contents
+    raise BundleError(e)
+BundleError: 'E:\!Workspace\P\LaTI\ProjeciLaTI\lati\static\css/dc.css' does not exist
+
+2018-01-07 22:15:05,786 
+
+'http://localhost:6001/'
+
+ENVIRONMENT
+
+{'HTTP_ACCEPT': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+ 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, br',
+ 'HTTP_ACCEPT_LANGUAGE': 'en-US,en;q=0.9',
+ 'HTTP_CACHE_CONTROL': 'max-age=0',
+ 'HTTP_CONNECTION': 'keep-alive',
+ 'HTTP_HOST': 'localhost:6001',
+ 'HTTP_REFERER': 'http://localhost:6001/',
+ 'HTTP_UPGRADE_INSECURE_REQUESTS': '1',
+ 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36 OPR/50.0.2762.45',
+ 'PATH_INFO': '/',
+ 'QUERY_STRING': '',
+ 'REMOTE_ADDR': '127.0.0.1',
+ 'REQUEST_METHOD': 'GET',
+ 'SCRIPT_NAME': '',
+ 'SERVER_NAME': 'ALCARINPC',
+ 'SERVER_PORT': '6001',
+ 'SERVER_PROTOCOL': 'HTTP/1.1',
+ 'SERVER_SOFTWARE': 'waitress',
+ 'webob._cache_control': ('max-age=0', <CacheControl 'max-age=0'>),
+ 'webob._parsed_cookies': ({}, ''),
+ 'webob._parsed_query_vars': (GET([]), ''),
+ 'wsgi.errors': <open file '<stderr>', mode 'w' at 0x033CD0D0>,
+ 'wsgi.file_wrapper': <class 'waitress.buffers.ReadOnlyFileBasedBuffer'>,
+ 'wsgi.input': <_io.BytesIO object at 0x07A1A150>,
+ 'wsgi.multiprocess': False,
+ 'wsgi.multithread': True,
+ 'wsgi.run_once': False,
+ 'wsgi.url_scheme': 'http',
+ 'wsgi.version': (1, 0)}
+
+
+PARAMETERS
+
+NestedMultiDict([])
+
+
+UNAUTHENTICATED USER
+
+None
+
+Traceback (most recent call last):
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\tweens.py", line 22, in excview_tween
+    response = handler(request)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\router.py", line 155, in handle_request
+    view_name
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\view.py", line 612, in _call_view
+    response = view_callable(context, request)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\viewderivers.py", line 461, in rendered_view
+    request, result, view_inst, context)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\renderers.py", line 432, in render_view
+    return self.render_to_response(response, system, request=request)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\renderers.py", line 455, in render_to_response
+    result = self.render(value, system_values, request=request)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\renderers.py", line 451, in render
+    result = renderer(value, system_values)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid_mako-1.0.2-py2.7.egg\pyramid_mako\__init__.py", line 156, in __call__
+    reraise(MakoRenderingException(errtext), None, exc_info[2])
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid_mako-1.0.2-py2.7.egg\pyramid_mako\__init__.py", line 148, in __call__
+    result = template.render_unicode(**system)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\template.py", line 471, in render_unicode
+    as_unicode=True)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 838, in _render
+    **_kwargs_for_callable(callable_, data))
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 873, in _render_context
+    _exec_template(inherit, lclcontext, args=args, kwargs=kwargs)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 899, in _exec_template
+    callable_(context, *args, **kwargs)
+  File "lati_templates_base_html", line 32, in render_body
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid_webassets-0.7.1-py2.7.egg\pyramid_webassets\__init__.py", line 128, in assets
+    urls = bundle.urls(env=env)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\webassets-0.9-py2.7.egg\webassets\bundle.py", line 685, in urls
+    urls.extend(bundle._urls(env, extra_filters, *args, **kwargs))
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\webassets-0.9-py2.7.egg\webassets\bundle.py", line 654, in _urls
+    for org, cnt in self.resolve_contents(env):
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\webassets-0.9-py2.7.egg\webassets\bundle.py", line 154, in resolve_contents
+    raise BundleError(e)
+MakoRenderingException: 
+
+Traceback (most recent call last):
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid_mako-1.0.2-py2.7.egg\pyramid_mako\__init__.py", line 148, in __call__
+    result = template.render_unicode(**system)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\template.py", line 471, in render_unicode
+    as_unicode=True)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 838, in _render
+    **_kwargs_for_callable(callable_, data))
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 873, in _render_context
+    _exec_template(inherit, lclcontext, args=args, kwargs=kwargs)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 899, in _exec_template
+    callable_(context, *args, **kwargs)
+  File "e:\!workspace\p\lati\projecilati\lati\templates\base.html", line 20, in render_body
+    % for url in webassets(request, 'css'):
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid_webassets-0.7.1-py2.7.egg\pyramid_webassets\__init__.py", line 128, in assets
+    urls = bundle.urls(env=env)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\webassets-0.9-py2.7.egg\webassets\bundle.py", line 685, in urls
+    urls.extend(bundle._urls(env, extra_filters, *args, **kwargs))
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\webassets-0.9-py2.7.egg\webassets\bundle.py", line 654, in _urls
+    for org, cnt in self.resolve_contents(env):
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\webassets-0.9-py2.7.egg\webassets\bundle.py", line 154, in resolve_contents
+    raise BundleError(e)
+BundleError: 'E:\!Workspace\P\LaTI\ProjeciLaTI\lati\static\css/nv.d3.css' does not exist
+
+2018-01-07 22:15:29,112 
+
+'http://localhost:6001/'
+
+ENVIRONMENT
+
+{'HTTP_ACCEPT': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+ 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, br',
+ 'HTTP_ACCEPT_LANGUAGE': 'en-US,en;q=0.9',
+ 'HTTP_CACHE_CONTROL': 'max-age=0',
+ 'HTTP_CONNECTION': 'keep-alive',
+ 'HTTP_HOST': 'localhost:6001',
+ 'HTTP_REFERER': 'http://localhost:6001/',
+ 'HTTP_UPGRADE_INSECURE_REQUESTS': '1',
+ 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36 OPR/50.0.2762.45',
+ 'PATH_INFO': '/',
+ 'QUERY_STRING': '',
+ 'REMOTE_ADDR': '127.0.0.1',
+ 'REQUEST_METHOD': 'GET',
+ 'SCRIPT_NAME': '',
+ 'SERVER_NAME': 'ALCARINPC',
+ 'SERVER_PORT': '6001',
+ 'SERVER_PROTOCOL': 'HTTP/1.1',
+ 'SERVER_SOFTWARE': 'waitress',
+ 'webob._cache_control': ('max-age=0', <CacheControl 'max-age=0'>),
+ 'webob._parsed_cookies': ({}, ''),
+ 'webob._parsed_query_vars': (GET([]), ''),
+ 'wsgi.errors': <open file '<stderr>', mode 'w' at 0x0527D0D0>,
+ 'wsgi.file_wrapper': <class 'waitress.buffers.ReadOnlyFileBasedBuffer'>,
+ 'wsgi.input': <_io.BytesIO object at 0x07837DE0>,
+ 'wsgi.multiprocess': False,
+ 'wsgi.multithread': True,
+ 'wsgi.run_once': False,
+ 'wsgi.url_scheme': 'http',
+ 'wsgi.version': (1, 0)}
+
+
+PARAMETERS
+
+NestedMultiDict([])
+
+
+UNAUTHENTICATED USER
+
+None
+
+Traceback (most recent call last):
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\tweens.py", line 22, in excview_tween
+    response = handler(request)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\router.py", line 155, in handle_request
+    view_name
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\view.py", line 612, in _call_view
+    response = view_callable(context, request)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\viewderivers.py", line 461, in rendered_view
+    request, result, view_inst, context)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\renderers.py", line 432, in render_view
+    return self.render_to_response(response, system, request=request)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\renderers.py", line 455, in render_to_response
+    result = self.render(value, system_values, request=request)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\renderers.py", line 451, in render
+    result = renderer(value, system_values)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid_mako-1.0.2-py2.7.egg\pyramid_mako\__init__.py", line 156, in __call__
+    reraise(MakoRenderingException(errtext), None, exc_info[2])
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid_mako-1.0.2-py2.7.egg\pyramid_mako\__init__.py", line 148, in __call__
+    result = template.render_unicode(**system)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\template.py", line 471, in render_unicode
+    as_unicode=True)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 838, in _render
+    **_kwargs_for_callable(callable_, data))
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 873, in _render_context
+    _exec_template(inherit, lclcontext, args=args, kwargs=kwargs)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 899, in _exec_template
+    callable_(context, *args, **kwargs)
+  File "lati_templates_base_html", line 34, in render_body
+MakoRenderingException: 
+
+Traceback (most recent call last):
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid_mako-1.0.2-py2.7.egg\pyramid_mako\__init__.py", line 148, in __call__
+    result = template.render_unicode(**system)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\template.py", line 471, in render_unicode
+    as_unicode=True)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 838, in _render
+    **_kwargs_for_callable(callable_, data))
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 873, in _render_context
+    _exec_template(inherit, lclcontext, args=args, kwargs=kwargs)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 899, in _exec_template
+    callable_(context, *args, **kwargs)
+  File "e:\!workspace\p\lati\projecilati\lati\templates\base.html", line 21, in render_body
+    <link rel="stylesheet" type="text/css" href="${h.fix_webasset(url)}" />
+AttributeError: 'Undefined' object has no attribute 'fix_webasset'
+
+2018-01-07 22:15:55,266 
+
+'http://localhost:6001/'
+
+ENVIRONMENT
+
+{'HTTP_ACCEPT': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+ 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, br',
+ 'HTTP_ACCEPT_LANGUAGE': 'en-US,en;q=0.9',
+ 'HTTP_CACHE_CONTROL': 'max-age=0',
+ 'HTTP_CONNECTION': 'keep-alive',
+ 'HTTP_HOST': 'localhost:6001',
+ 'HTTP_REFERER': 'http://localhost:6001/',
+ 'HTTP_UPGRADE_INSECURE_REQUESTS': '1',
+ 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36 OPR/50.0.2762.45',
+ 'PATH_INFO': '/',
+ 'QUERY_STRING': '',
+ 'REMOTE_ADDR': '127.0.0.1',
+ 'REQUEST_METHOD': 'GET',
+ 'SCRIPT_NAME': '',
+ 'SERVER_NAME': 'ALCARINPC',
+ 'SERVER_PORT': '6001',
+ 'SERVER_PROTOCOL': 'HTTP/1.1',
+ 'SERVER_SOFTWARE': 'waitress',
+ 'webob._cache_control': ('max-age=0', <CacheControl 'max-age=0'>),
+ 'webob._parsed_cookies': ({}, ''),
+ 'webob._parsed_query_vars': (GET([]), ''),
+ 'wsgi.errors': <open file '<stderr>', mode 'w' at 0x0527D0D0>,
+ 'wsgi.file_wrapper': <class 'waitress.buffers.ReadOnlyFileBasedBuffer'>,
+ 'wsgi.input': <_io.BytesIO object at 0x07A7F9C0>,
+ 'wsgi.multiprocess': False,
+ 'wsgi.multithread': True,
+ 'wsgi.run_once': False,
+ 'wsgi.url_scheme': 'http',
+ 'wsgi.version': (1, 0)}
+
+
+PARAMETERS
+
+NestedMultiDict([])
+
+
+UNAUTHENTICATED USER
+
+None
+
+Traceback (most recent call last):
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\tweens.py", line 22, in excview_tween
+    response = handler(request)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\router.py", line 155, in handle_request
+    view_name
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\view.py", line 612, in _call_view
+    response = view_callable(context, request)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\viewderivers.py", line 461, in rendered_view
+    request, result, view_inst, context)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\renderers.py", line 432, in render_view
+    return self.render_to_response(response, system, request=request)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\renderers.py", line 455, in render_to_response
+    result = self.render(value, system_values, request=request)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\renderers.py", line 451, in render
+    result = renderer(value, system_values)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid_mako-1.0.2-py2.7.egg\pyramid_mako\__init__.py", line 156, in __call__
+    reraise(MakoRenderingException(errtext), None, exc_info[2])
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid_mako-1.0.2-py2.7.egg\pyramid_mako\__init__.py", line 148, in __call__
+    result = template.render_unicode(**system)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\template.py", line 471, in render_unicode
+    as_unicode=True)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 838, in _render
+    **_kwargs_for_callable(callable_, data))
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 873, in _render_context
+    _exec_template(inherit, lclcontext, args=args, kwargs=kwargs)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 899, in _exec_template
+    callable_(context, *args, **kwargs)
+  File "lati_templates_base_html", line 49, in render_body
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\url.py", line 316, in route_path
+    return self.route_url(route_name, *elements, **kw)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\url.py", line 264, in route_url
+    raise KeyError('No such route named %s' % route_name)
+MakoRenderingException: 
+
+Traceback (most recent call last):
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid_mako-1.0.2-py2.7.egg\pyramid_mako\__init__.py", line 148, in __call__
+    result = template.render_unicode(**system)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\template.py", line 471, in render_unicode
+    as_unicode=True)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 838, in _render
+    **_kwargs_for_callable(callable_, data))
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 873, in _render_context
+    _exec_template(inherit, lclcontext, args=args, kwargs=kwargs)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 899, in _exec_template
+    callable_(context, *args, **kwargs)
+  File "e:\!workspace\p\lati\projecilati\lati\templates\base.html", line 31, in render_body
+    <script type="text/javascript" src="${request.route_path('js')}"></script>
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\url.py", line 316, in route_path
+    return self.route_url(route_name, *elements, **kw)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\url.py", line 264, in route_url
+    raise KeyError('No such route named %s' % route_name)
+KeyError: 'No such route named js'
+
+2018-01-07 22:16:27,503 
+
+'http://localhost:6001/'
+
+ENVIRONMENT
+
+{'HTTP_ACCEPT': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+ 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, br',
+ 'HTTP_ACCEPT_LANGUAGE': 'en-US,en;q=0.9',
+ 'HTTP_CACHE_CONTROL': 'max-age=0',
+ 'HTTP_CONNECTION': 'keep-alive',
+ 'HTTP_HOST': 'localhost:6001',
+ 'HTTP_REFERER': 'http://localhost:6001/',
+ 'HTTP_UPGRADE_INSECURE_REQUESTS': '1',
+ 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36 OPR/50.0.2762.45',
+ 'PATH_INFO': '/',
+ 'QUERY_STRING': '',
+ 'REMOTE_ADDR': '127.0.0.1',
+ 'REQUEST_METHOD': 'GET',
+ 'SCRIPT_NAME': '',
+ 'SERVER_NAME': 'ALCARINPC',
+ 'SERVER_PORT': '6001',
+ 'SERVER_PROTOCOL': 'HTTP/1.1',
+ 'SERVER_SOFTWARE': 'waitress',
+ 'webob._cache_control': ('max-age=0', <CacheControl 'max-age=0'>),
+ 'webob._parsed_cookies': ({}, ''),
+ 'webob._parsed_query_vars': (GET([]), ''),
+ 'wsgi.errors': <open file '<stderr>', mode 'w' at 0x047FD0D0>,
+ 'wsgi.file_wrapper': <class 'waitress.buffers.ReadOnlyFileBasedBuffer'>,
+ 'wsgi.input': <_io.BytesIO object at 0x06EFAFC0>,
+ 'wsgi.multiprocess': False,
+ 'wsgi.multithread': True,
+ 'wsgi.run_once': False,
+ 'wsgi.url_scheme': 'http',
+ 'wsgi.version': (1, 0)}
+
+
+PARAMETERS
+
+NestedMultiDict([])
+
+
+UNAUTHENTICATED USER
+
+None
+
+Traceback (most recent call last):
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\tweens.py", line 22, in excview_tween
+    response = handler(request)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\router.py", line 155, in handle_request
+    view_name
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\view.py", line 612, in _call_view
+    response = view_callable(context, request)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\viewderivers.py", line 461, in rendered_view
+    request, result, view_inst, context)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\renderers.py", line 432, in render_view
+    return self.render_to_response(response, system, request=request)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\renderers.py", line 455, in render_to_response
+    result = self.render(value, system_values, request=request)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\renderers.py", line 451, in render
+    result = renderer(value, system_values)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid_mako-1.0.2-py2.7.egg\pyramid_mako\__init__.py", line 156, in __call__
+    reraise(MakoRenderingException(errtext), None, exc_info[2])
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid_mako-1.0.2-py2.7.egg\pyramid_mako\__init__.py", line 148, in __call__
+    result = template.render_unicode(**system)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\template.py", line 471, in render_unicode
+    as_unicode=True)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 838, in _render
+    **_kwargs_for_callable(callable_, data))
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 873, in _render_context
+    _exec_template(inherit, lclcontext, args=args, kwargs=kwargs)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 899, in _exec_template
+    callable_(context, *args, **kwargs)
+  File "lati_templates_base_html", line 51, in render_body
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid_webassets-0.7.1-py2.7.egg\pyramid_webassets\__init__.py", line 128, in assets
+    urls = bundle.urls(env=env)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\webassets-0.9-py2.7.egg\webassets\bundle.py", line 685, in urls
+    urls.extend(bundle._urls(env, extra_filters, *args, **kwargs))
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\webassets-0.9-py2.7.egg\webassets\bundle.py", line 654, in _urls
+    for org, cnt in self.resolve_contents(env):
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\webassets-0.9-py2.7.egg\webassets\bundle.py", line 154, in resolve_contents
+    raise BundleError(e)
+MakoRenderingException: 
+
+Traceback (most recent call last):
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid_mako-1.0.2-py2.7.egg\pyramid_mako\__init__.py", line 148, in __call__
+    result = template.render_unicode(**system)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\template.py", line 471, in render_unicode
+    as_unicode=True)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 838, in _render
+    **_kwargs_for_callable(callable_, data))
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 873, in _render_context
+    _exec_template(inherit, lclcontext, args=args, kwargs=kwargs)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 899, in _exec_template
+    callable_(context, *args, **kwargs)
+  File "e:\!workspace\p\lati\projecilati\lati\templates\base.html", line 34, in render_body
+    % for url in webassets(request, 'jslibraries'):
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid_webassets-0.7.1-py2.7.egg\pyramid_webassets\__init__.py", line 128, in assets
+    urls = bundle.urls(env=env)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\webassets-0.9-py2.7.egg\webassets\bundle.py", line 685, in urls
+    urls.extend(bundle._urls(env, extra_filters, *args, **kwargs))
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\webassets-0.9-py2.7.egg\webassets\bundle.py", line 654, in _urls
+    for org, cnt in self.resolve_contents(env):
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\webassets-0.9-py2.7.egg\webassets\bundle.py", line 154, in resolve_contents
+    raise BundleError(e)
+BundleError: 'E:\!Workspace\P\LaTI\ProjeciLaTI\lati\static\js/lib/underscore-min.js' does not exist
+
+2018-01-07 22:20:13,265 
+
+'http://localhost:6001/'
+
+ENVIRONMENT
+
+{'HTTP_ACCEPT': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+ 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, br',
+ 'HTTP_ACCEPT_LANGUAGE': 'en-US,en;q=0.9',
+ 'HTTP_CACHE_CONTROL': 'max-age=0',
+ 'HTTP_CONNECTION': 'keep-alive',
+ 'HTTP_HOST': 'localhost:6001',
+ 'HTTP_REFERER': 'http://localhost:6001/',
+ 'HTTP_UPGRADE_INSECURE_REQUESTS': '1',
+ 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36 OPR/50.0.2762.45',
+ 'PATH_INFO': '/',
+ 'QUERY_STRING': '',
+ 'REMOTE_ADDR': '127.0.0.1',
+ 'REQUEST_METHOD': 'GET',
+ 'SCRIPT_NAME': '',
+ 'SERVER_NAME': 'ALCARINPC',
+ 'SERVER_PORT': '6001',
+ 'SERVER_PROTOCOL': 'HTTP/1.1',
+ 'SERVER_SOFTWARE': 'waitress',
+ 'webob._cache_control': ('max-age=0', <CacheControl 'max-age=0'>),
+ 'webob._parsed_cookies': ({}, ''),
+ 'webob._parsed_query_vars': (GET([]), ''),
+ 'wsgi.errors': <open file '<stderr>', mode 'w' at 0x0481D0D0>,
+ 'wsgi.file_wrapper': <class 'waitress.buffers.ReadOnlyFileBasedBuffer'>,
+ 'wsgi.input': <_io.BytesIO object at 0x06F9E2A0>,
+ 'wsgi.multiprocess': False,
+ 'wsgi.multithread': True,
+ 'wsgi.run_once': False,
+ 'wsgi.url_scheme': 'http',
+ 'wsgi.version': (1, 0)}
+
+
+PARAMETERS
+
+NestedMultiDict([])
+
+
+UNAUTHENTICATED USER
+
+None
+
+Traceback (most recent call last):
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\tweens.py", line 22, in excview_tween
+    response = handler(request)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\router.py", line 155, in handle_request
+    view_name
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\view.py", line 612, in _call_view
+    response = view_callable(context, request)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\viewderivers.py", line 461, in rendered_view
+    request, result, view_inst, context)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\renderers.py", line 432, in render_view
+    return self.render_to_response(response, system, request=request)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\renderers.py", line 455, in render_to_response
+    result = self.render(value, system_values, request=request)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\renderers.py", line 451, in render
+    result = renderer(value, system_values)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid_mako-1.0.2-py2.7.egg\pyramid_mako\__init__.py", line 156, in __call__
+    reraise(MakoRenderingException(errtext), None, exc_info[2])
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid_mako-1.0.2-py2.7.egg\pyramid_mako\__init__.py", line 148, in __call__
+    result = template.render_unicode(**system)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\template.py", line 471, in render_unicode
+    as_unicode=True)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 838, in _render
+    **_kwargs_for_callable(callable_, data))
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 872, in _render_context
+    (inherit, lclcontext) = _populate_self_namespace(context, tmpl)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 814, in _populate_self_namespace
+    ret = template.module._mako_inherit(template, context)
+  File "lati_templates_main_html", line 25, in _mako_inherit
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 771, in _inherit_from
+    template = _lookup_template(context, uri, calling_uri)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 804, in _lookup_template
+    raise exceptions.TemplateLookupException(str(compat.exception_as()))
+MakoRenderingException: 
+
+Traceback (most recent call last):
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid_mako-1.0.2-py2.7.egg\pyramid_mako\__init__.py", line 148, in __call__
+    result = template.render_unicode(**system)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\template.py", line 471, in render_unicode
+    as_unicode=True)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 838, in _render
+    **_kwargs_for_callable(callable_, data))
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 872, in _render_context
+    (inherit, lclcontext) = _populate_self_namespace(context, tmpl)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 814, in _populate_self_namespace
+    ret = template.module._mako_inherit(template, context)
+  File "e:\!workspace\p\lati\projecilati\lati\templates\main.html", line 1, in _mako_inherit
+    # -*- coding: utf-8 -*-
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 771, in _inherit_from
+    template = _lookup_template(context, uri, calling_uri)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 804, in _lookup_template
+    raise exceptions.TemplateLookupException(str(compat.exception_as()))
+TemplateLookupException: Can not locate template for uri u'lati:templates/base.html'
+
+2018-01-07 22:21:47,022 
+
+'http://localhost:6001/'
+
+ENVIRONMENT
+
+{'HTTP_ACCEPT': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+ 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, br',
+ 'HTTP_ACCEPT_LANGUAGE': 'en-US,en;q=0.9',
+ 'HTTP_CACHE_CONTROL': 'max-age=0',
+ 'HTTP_CONNECTION': 'keep-alive',
+ 'HTTP_HOST': 'localhost:6001',
+ 'HTTP_REFERER': 'http://localhost:6001/',
+ 'HTTP_UPGRADE_INSECURE_REQUESTS': '1',
+ 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36 OPR/50.0.2762.45',
+ 'PATH_INFO': '/',
+ 'QUERY_STRING': '',
+ 'REMOTE_ADDR': '127.0.0.1',
+ 'REQUEST_METHOD': 'GET',
+ 'SCRIPT_NAME': '',
+ 'SERVER_NAME': 'ALCARINPC',
+ 'SERVER_PORT': '6001',
+ 'SERVER_PROTOCOL': 'HTTP/1.1',
+ 'SERVER_SOFTWARE': 'waitress',
+ 'webob._cache_control': ('max-age=0', <CacheControl 'max-age=0'>),
+ 'webob._parsed_cookies': ({}, ''),
+ 'webob._parsed_query_vars': (GET([]), ''),
+ 'wsgi.errors': <open file '<stderr>', mode 'w' at 0x0481D0D0>,
+ 'wsgi.file_wrapper': <class 'waitress.buffers.ReadOnlyFileBasedBuffer'>,
+ 'wsgi.input': <_io.BytesIO object at 0x0704A900>,
+ 'wsgi.multiprocess': False,
+ 'wsgi.multithread': True,
+ 'wsgi.run_once': False,
+ 'wsgi.url_scheme': 'http',
+ 'wsgi.version': (1, 0)}
+
+
+PARAMETERS
+
+NestedMultiDict([])
+
+
+UNAUTHENTICATED USER
+
+None
+
+Traceback (most recent call last):
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\tweens.py", line 22, in excview_tween
+    response = handler(request)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\router.py", line 155, in handle_request
+    view_name
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\view.py", line 612, in _call_view
+    response = view_callable(context, request)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\viewderivers.py", line 461, in rendered_view
+    request, result, view_inst, context)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\renderers.py", line 432, in render_view
+    return self.render_to_response(response, system, request=request)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\renderers.py", line 455, in render_to_response
+    result = self.render(value, system_values, request=request)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\renderers.py", line 451, in render
+    result = renderer(value, system_values)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid_mako-1.0.2-py2.7.egg\pyramid_mako\__init__.py", line 156, in __call__
+    reraise(MakoRenderingException(errtext), None, exc_info[2])
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid_mako-1.0.2-py2.7.egg\pyramid_mako\__init__.py", line 148, in __call__
+    result = template.render_unicode(**system)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\template.py", line 471, in render_unicode
+    as_unicode=True)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 838, in _render
+    **_kwargs_for_callable(callable_, data))
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 872, in _render_context
+    (inherit, lclcontext) = _populate_self_namespace(context, tmpl)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 814, in _populate_self_namespace
+    ret = template.module._mako_inherit(template, context)
+  File "lati_templates_main_html", line 25, in _mako_inherit
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 771, in _inherit_from
+    template = _lookup_template(context, uri, calling_uri)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 804, in _lookup_template
+    raise exceptions.TemplateLookupException(str(compat.exception_as()))
+MakoRenderingException: 
+
+Traceback (most recent call last):
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid_mako-1.0.2-py2.7.egg\pyramid_mako\__init__.py", line 148, in __call__
+    result = template.render_unicode(**system)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\template.py", line 471, in render_unicode
+    as_unicode=True)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 838, in _render
+    **_kwargs_for_callable(callable_, data))
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 872, in _render_context
+    (inherit, lclcontext) = _populate_self_namespace(context, tmpl)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 814, in _populate_self_namespace
+    ret = template.module._mako_inherit(template, context)
+  File "e:\!workspace\p\lati\projecilati\lati\templates\main.html", line 1, in _mako_inherit
+    # -*- coding: utf-8 -*-
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 771, in _inherit_from
+    template = _lookup_template(context, uri, calling_uri)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 804, in _lookup_template
+    raise exceptions.TemplateLookupException(str(compat.exception_as()))
+TemplateLookupException: Can not locate template for uri u'lati:templates/base.html'
+
+2018-01-07 22:23:01,134 
+
+'http://localhost:6001/'
+
+ENVIRONMENT
+
+{'HTTP_ACCEPT': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+ 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, br',
+ 'HTTP_ACCEPT_LANGUAGE': 'en-US,en;q=0.9',
+ 'HTTP_CACHE_CONTROL': 'max-age=0',
+ 'HTTP_CONNECTION': 'keep-alive',
+ 'HTTP_HOST': 'localhost:6001',
+ 'HTTP_REFERER': 'http://localhost:6001/',
+ 'HTTP_UPGRADE_INSECURE_REQUESTS': '1',
+ 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36 OPR/50.0.2762.45',
+ 'PATH_INFO': '/',
+ 'QUERY_STRING': '',
+ 'REMOTE_ADDR': '127.0.0.1',
+ 'REQUEST_METHOD': 'GET',
+ 'SCRIPT_NAME': '',
+ 'SERVER_NAME': 'ALCARINPC',
+ 'SERVER_PORT': '6001',
+ 'SERVER_PROTOCOL': 'HTTP/1.1',
+ 'SERVER_SOFTWARE': 'waitress',
+ 'webob._cache_control': ('max-age=0', <CacheControl 'max-age=0'>),
+ 'webob._parsed_cookies': ({}, ''),
+ 'webob._parsed_query_vars': (GET([]), ''),
+ 'wsgi.errors': <open file '<stderr>', mode 'w' at 0x0481D0D0>,
+ 'wsgi.file_wrapper': <class 'waitress.buffers.ReadOnlyFileBasedBuffer'>,
+ 'wsgi.input': <_io.BytesIO object at 0x071D6E70>,
+ 'wsgi.multiprocess': False,
+ 'wsgi.multithread': True,
+ 'wsgi.run_once': False,
+ 'wsgi.url_scheme': 'http',
+ 'wsgi.version': (1, 0)}
+
+
+PARAMETERS
+
+NestedMultiDict([])
+
+
+UNAUTHENTICATED USER
+
+None
+
+Traceback (most recent call last):
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\tweens.py", line 22, in excview_tween
+    response = handler(request)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\router.py", line 155, in handle_request
+    view_name
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\view.py", line 612, in _call_view
+    response = view_callable(context, request)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\viewderivers.py", line 461, in rendered_view
+    request, result, view_inst, context)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\renderers.py", line 432, in render_view
+    return self.render_to_response(response, system, request=request)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\renderers.py", line 455, in render_to_response
+    result = self.render(value, system_values, request=request)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\renderers.py", line 451, in render
+    result = renderer(value, system_values)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid_mako-1.0.2-py2.7.egg\pyramid_mako\__init__.py", line 156, in __call__
+    reraise(MakoRenderingException(errtext), None, exc_info[2])
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid_mako-1.0.2-py2.7.egg\pyramid_mako\__init__.py", line 148, in __call__
+    result = template.render_unicode(**system)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\template.py", line 471, in render_unicode
+    as_unicode=True)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 838, in _render
+    **_kwargs_for_callable(callable_, data))
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 873, in _render_context
+    _exec_template(inherit, lclcontext, args=args, kwargs=kwargs)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 899, in _exec_template
+    callable_(context, *args, **kwargs)
+  File "lati_templates_base_html", line 34, in render_body
+MakoRenderingException: 
+
+Traceback (most recent call last):
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid_mako-1.0.2-py2.7.egg\pyramid_mako\__init__.py", line 148, in __call__
+    result = template.render_unicode(**system)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\template.py", line 471, in render_unicode
+    as_unicode=True)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 838, in _render
+    **_kwargs_for_callable(callable_, data))
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 873, in _render_context
+    _exec_template(inherit, lclcontext, args=args, kwargs=kwargs)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 899, in _exec_template
+    callable_(context, *args, **kwargs)
+  File "e:\!workspace\p\lati\projecilati\lati\templates\base.html", line 21, in render_body
+    <link rel="stylesheet" type="text/css" href="${h.fix_webasset(url)}" />
+AttributeError: 'Undefined' object has no attribute 'fix_webasset'
+
+2018-01-07 22:23:12,453 
+
+'http://localhost:6001/'
+
+ENVIRONMENT
+
+{'HTTP_ACCEPT': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+ 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, br',
+ 'HTTP_ACCEPT_LANGUAGE': 'en-US,en;q=0.9',
+ 'HTTP_CACHE_CONTROL': 'max-age=0',
+ 'HTTP_CONNECTION': 'keep-alive',
+ 'HTTP_HOST': 'localhost:6001',
+ 'HTTP_REFERER': 'http://localhost:6001/',
+ 'HTTP_UPGRADE_INSECURE_REQUESTS': '1',
+ 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36 OPR/50.0.2762.45',
+ 'PATH_INFO': '/',
+ 'QUERY_STRING': '',
+ 'REMOTE_ADDR': '127.0.0.1',
+ 'REQUEST_METHOD': 'GET',
+ 'SCRIPT_NAME': '',
+ 'SERVER_NAME': 'ALCARINPC',
+ 'SERVER_PORT': '6001',
+ 'SERVER_PROTOCOL': 'HTTP/1.1',
+ 'SERVER_SOFTWARE': 'waitress',
+ 'webob._cache_control': ('max-age=0', <CacheControl 'max-age=0'>),
+ 'webob._parsed_cookies': ({}, ''),
+ 'webob._parsed_query_vars': (GET([]), ''),
+ 'wsgi.errors': <open file '<stderr>', mode 'w' at 0x0481D0D0>,
+ 'wsgi.file_wrapper': <class 'waitress.buffers.ReadOnlyFileBasedBuffer'>,
+ 'wsgi.input': <_io.BytesIO object at 0x072E6450>,
+ 'wsgi.multiprocess': False,
+ 'wsgi.multithread': True,
+ 'wsgi.run_once': False,
+ 'wsgi.url_scheme': 'http',
+ 'wsgi.version': (1, 0)}
+
+
+PARAMETERS
+
+NestedMultiDict([])
+
+
+UNAUTHENTICATED USER
+
+None
+
+Traceback (most recent call last):
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\tweens.py", line 22, in excview_tween
+    response = handler(request)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\router.py", line 155, in handle_request
+    view_name
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\view.py", line 612, in _call_view
+    response = view_callable(context, request)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\viewderivers.py", line 461, in rendered_view
+    request, result, view_inst, context)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\renderers.py", line 432, in render_view
+    return self.render_to_response(response, system, request=request)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\renderers.py", line 455, in render_to_response
+    result = self.render(value, system_values, request=request)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\renderers.py", line 451, in render
+    result = renderer(value, system_values)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid_mako-1.0.2-py2.7.egg\pyramid_mako\__init__.py", line 156, in __call__
+    reraise(MakoRenderingException(errtext), None, exc_info[2])
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid_mako-1.0.2-py2.7.egg\pyramid_mako\__init__.py", line 148, in __call__
+    result = template.render_unicode(**system)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\template.py", line 471, in render_unicode
+    as_unicode=True)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 838, in _render
+    **_kwargs_for_callable(callable_, data))
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 873, in _render_context
+    _exec_template(inherit, lclcontext, args=args, kwargs=kwargs)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 899, in _exec_template
+    callable_(context, *args, **kwargs)
+  File "lati_templates_base_html", line 51, in render_body
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid_webassets-0.7.1-py2.7.egg\pyramid_webassets\__init__.py", line 128, in assets
+    urls = bundle.urls(env=env)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\webassets-0.9-py2.7.egg\webassets\bundle.py", line 685, in urls
+    urls.extend(bundle._urls(env, extra_filters, *args, **kwargs))
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\webassets-0.9-py2.7.egg\webassets\bundle.py", line 654, in _urls
+    for org, cnt in self.resolve_contents(env):
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\webassets-0.9-py2.7.egg\webassets\bundle.py", line 154, in resolve_contents
+    raise BundleError(e)
+MakoRenderingException: 
+
+Traceback (most recent call last):
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid_mako-1.0.2-py2.7.egg\pyramid_mako\__init__.py", line 148, in __call__
+    result = template.render_unicode(**system)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\template.py", line 471, in render_unicode
+    as_unicode=True)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 838, in _render
+    **_kwargs_for_callable(callable_, data))
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 873, in _render_context
+    _exec_template(inherit, lclcontext, args=args, kwargs=kwargs)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 899, in _exec_template
+    callable_(context, *args, **kwargs)
+  File "e:\!workspace\p\lati\projecilati\lati\templates\base.html", line 37, in render_body
+    % for url in webassets(request, 'jslibraries'):
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid_webassets-0.7.1-py2.7.egg\pyramid_webassets\__init__.py", line 128, in assets
+    urls = bundle.urls(env=env)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\webassets-0.9-py2.7.egg\webassets\bundle.py", line 685, in urls
+    urls.extend(bundle._urls(env, extra_filters, *args, **kwargs))
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\webassets-0.9-py2.7.egg\webassets\bundle.py", line 654, in _urls
+    for org, cnt in self.resolve_contents(env):
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\webassets-0.9-py2.7.egg\webassets\bundle.py", line 154, in resolve_contents
+    raise BundleError(e)
+BundleError: 'E:\!Workspace\P\LaTI\ProjeciLaTI\lati\static\js/lib/underscore-min.js' does not exist
+
+2018-01-07 22:23:31,937 
+
+'http://localhost:6001/'
+
+ENVIRONMENT
+
+{'HTTP_ACCEPT': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+ 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, br',
+ 'HTTP_ACCEPT_LANGUAGE': 'en-US,en;q=0.9',
+ 'HTTP_CACHE_CONTROL': 'max-age=0',
+ 'HTTP_CONNECTION': 'keep-alive',
+ 'HTTP_HOST': 'localhost:6001',
+ 'HTTP_REFERER': 'http://localhost:6001/',
+ 'HTTP_UPGRADE_INSECURE_REQUESTS': '1',
+ 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36 OPR/50.0.2762.45',
+ 'PATH_INFO': '/',
+ 'QUERY_STRING': '',
+ 'REMOTE_ADDR': '127.0.0.1',
+ 'REQUEST_METHOD': 'GET',
+ 'SCRIPT_NAME': '',
+ 'SERVER_NAME': 'ALCARINPC',
+ 'SERVER_PORT': '6001',
+ 'SERVER_PROTOCOL': 'HTTP/1.1',
+ 'SERVER_SOFTWARE': 'waitress',
+ 'webob._cache_control': ('max-age=0', <CacheControl 'max-age=0'>),
+ 'webob._parsed_cookies': ({}, ''),
+ 'webob._parsed_query_vars': (GET([]), ''),
+ 'wsgi.errors': <open file '<stderr>', mode 'w' at 0x0481D0D0>,
+ 'wsgi.file_wrapper': <class 'waitress.buffers.ReadOnlyFileBasedBuffer'>,
+ 'wsgi.input': <_io.BytesIO object at 0x072E6BD0>,
+ 'wsgi.multiprocess': False,
+ 'wsgi.multithread': True,
+ 'wsgi.run_once': False,
+ 'wsgi.url_scheme': 'http',
+ 'wsgi.version': (1, 0)}
+
+
+PARAMETERS
+
+NestedMultiDict([])
+
+
+UNAUTHENTICATED USER
+
+None
+
+Traceback (most recent call last):
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\tweens.py", line 22, in excview_tween
+    response = handler(request)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\router.py", line 155, in handle_request
+    view_name
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\view.py", line 612, in _call_view
+    response = view_callable(context, request)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\viewderivers.py", line 461, in rendered_view
+    request, result, view_inst, context)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\renderers.py", line 432, in render_view
+    return self.render_to_response(response, system, request=request)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\renderers.py", line 455, in render_to_response
+    result = self.render(value, system_values, request=request)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\renderers.py", line 451, in render
+    result = renderer(value, system_values)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid_mako-1.0.2-py2.7.egg\pyramid_mako\__init__.py", line 156, in __call__
+    reraise(MakoRenderingException(errtext), None, exc_info[2])
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid_mako-1.0.2-py2.7.egg\pyramid_mako\__init__.py", line 148, in __call__
+    result = template.render_unicode(**system)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\template.py", line 471, in render_unicode
+    as_unicode=True)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 838, in _render
+    **_kwargs_for_callable(callable_, data))
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 873, in _render_context
+    _exec_template(inherit, lclcontext, args=args, kwargs=kwargs)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 899, in _exec_template
+    callable_(context, *args, **kwargs)
+  File "lati_templates_base_html", line 51, in render_body
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid_webassets-0.7.1-py2.7.egg\pyramid_webassets\__init__.py", line 128, in assets
+    urls = bundle.urls(env=env)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\webassets-0.9-py2.7.egg\webassets\bundle.py", line 685, in urls
+    urls.extend(bundle._urls(env, extra_filters, *args, **kwargs))
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\webassets-0.9-py2.7.egg\webassets\bundle.py", line 654, in _urls
+    for org, cnt in self.resolve_contents(env):
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\webassets-0.9-py2.7.egg\webassets\bundle.py", line 154, in resolve_contents
+    raise BundleError(e)
+MakoRenderingException: 
+
+Traceback (most recent call last):
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid_mako-1.0.2-py2.7.egg\pyramid_mako\__init__.py", line 148, in __call__
+    result = template.render_unicode(**system)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\template.py", line 471, in render_unicode
+    as_unicode=True)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 838, in _render
+    **_kwargs_for_callable(callable_, data))
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 873, in _render_context
+    _exec_template(inherit, lclcontext, args=args, kwargs=kwargs)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 899, in _exec_template
+    callable_(context, *args, **kwargs)
+  File "e:\!workspace\p\lati\projecilati\lati\templates\base.html", line 36, in render_body
+    % for url in webassets(request, 'jslibraries'):
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid_webassets-0.7.1-py2.7.egg\pyramid_webassets\__init__.py", line 128, in assets
+    urls = bundle.urls(env=env)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\webassets-0.9-py2.7.egg\webassets\bundle.py", line 685, in urls
+    urls.extend(bundle._urls(env, extra_filters, *args, **kwargs))
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\webassets-0.9-py2.7.egg\webassets\bundle.py", line 654, in _urls
+    for org, cnt in self.resolve_contents(env):
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\webassets-0.9-py2.7.egg\webassets\bundle.py", line 154, in resolve_contents
+    raise BundleError(e)
+BundleError: 'E:\!Workspace\P\LaTI\ProjeciLaTI\lati\static\js/lib/underscore-min.js' does not exist
+
+2018-01-07 22:24:05,308 
+
+'http://localhost:6001/'
+
+ENVIRONMENT
+
+{'HTTP_ACCEPT': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+ 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, br',
+ 'HTTP_ACCEPT_LANGUAGE': 'en-US,en;q=0.9',
+ 'HTTP_CACHE_CONTROL': 'max-age=0',
+ 'HTTP_CONNECTION': 'keep-alive',
+ 'HTTP_HOST': 'localhost:6001',
+ 'HTTP_REFERER': 'http://localhost:6001/',
+ 'HTTP_UPGRADE_INSECURE_REQUESTS': '1',
+ 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36 OPR/50.0.2762.45',
+ 'PATH_INFO': '/',
+ 'QUERY_STRING': '',
+ 'REMOTE_ADDR': '127.0.0.1',
+ 'REQUEST_METHOD': 'GET',
+ 'SCRIPT_NAME': '',
+ 'SERVER_NAME': 'ALCARINPC',
+ 'SERVER_PORT': '6001',
+ 'SERVER_PROTOCOL': 'HTTP/1.1',
+ 'SERVER_SOFTWARE': 'waitress',
+ 'webob._cache_control': ('max-age=0', <CacheControl 'max-age=0'>),
+ 'webob._parsed_cookies': ({}, ''),
+ 'webob._parsed_query_vars': (GET([]), ''),
+ 'wsgi.errors': <open file '<stderr>', mode 'w' at 0x04CAD0D0>,
+ 'wsgi.file_wrapper': <class 'waitress.buffers.ReadOnlyFileBasedBuffer'>,
+ 'wsgi.input': <_io.BytesIO object at 0x07418240>,
+ 'wsgi.multiprocess': False,
+ 'wsgi.multithread': True,
+ 'wsgi.run_once': False,
+ 'wsgi.url_scheme': 'http',
+ 'wsgi.version': (1, 0)}
+
+
+PARAMETERS
+
+NestedMultiDict([])
+
+
+UNAUTHENTICATED USER
+
+None
+
+Traceback (most recent call last):
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\tweens.py", line 22, in excview_tween
+    response = handler(request)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\router.py", line 155, in handle_request
+    view_name
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\view.py", line 612, in _call_view
+    response = view_callable(context, request)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\viewderivers.py", line 461, in rendered_view
+    request, result, view_inst, context)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\renderers.py", line 432, in render_view
+    return self.render_to_response(response, system, request=request)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\renderers.py", line 455, in render_to_response
+    result = self.render(value, system_values, request=request)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\renderers.py", line 451, in render
+    result = renderer(value, system_values)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid_mako-1.0.2-py2.7.egg\pyramid_mako\__init__.py", line 156, in __call__
+    reraise(MakoRenderingException(errtext), None, exc_info[2])
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid_mako-1.0.2-py2.7.egg\pyramid_mako\__init__.py", line 148, in __call__
+    result = template.render_unicode(**system)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\template.py", line 471, in render_unicode
+    as_unicode=True)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 838, in _render
+    **_kwargs_for_callable(callable_, data))
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 873, in _render_context
+    _exec_template(inherit, lclcontext, args=args, kwargs=kwargs)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 899, in _exec_template
+    callable_(context, *args, **kwargs)
+  File "lati_templates_base_html", line 51, in render_body
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid_webassets-0.7.1-py2.7.egg\pyramid_webassets\__init__.py", line 128, in assets
+    urls = bundle.urls(env=env)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\webassets-0.9-py2.7.egg\webassets\bundle.py", line 685, in urls
+    urls.extend(bundle._urls(env, extra_filters, *args, **kwargs))
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\webassets-0.9-py2.7.egg\webassets\bundle.py", line 654, in _urls
+    for org, cnt in self.resolve_contents(env):
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\webassets-0.9-py2.7.egg\webassets\bundle.py", line 154, in resolve_contents
+    raise BundleError(e)
+MakoRenderingException: 
+
+Traceback (most recent call last):
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid_mako-1.0.2-py2.7.egg\pyramid_mako\__init__.py", line 148, in __call__
+    result = template.render_unicode(**system)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\template.py", line 471, in render_unicode
+    as_unicode=True)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 838, in _render
+    **_kwargs_for_callable(callable_, data))
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 873, in _render_context
+    _exec_template(inherit, lclcontext, args=args, kwargs=kwargs)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 899, in _exec_template
+    callable_(context, *args, **kwargs)
+  File "e:\!workspace\p\lati\projecilati\lati\templates\base.html", line 36, in render_body
+    % for url in webassets(request, 'jslibraries'):
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid_webassets-0.7.1-py2.7.egg\pyramid_webassets\__init__.py", line 128, in assets
+    urls = bundle.urls(env=env)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\webassets-0.9-py2.7.egg\webassets\bundle.py", line 685, in urls
+    urls.extend(bundle._urls(env, extra_filters, *args, **kwargs))
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\webassets-0.9-py2.7.egg\webassets\bundle.py", line 654, in _urls
+    for org, cnt in self.resolve_contents(env):
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\webassets-0.9-py2.7.egg\webassets\bundle.py", line 154, in resolve_contents
+    raise BundleError(e)
+BundleError: 'E:\!Workspace\P\LaTI\ProjeciLaTI\lati\static\js/lib/underscore-min.js' does not exist
+
+2018-01-07 22:30:23,632 
+
+'http://localhost:6001/'
+
+ENVIRONMENT
+
+{'HTTP_ACCEPT': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+ 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, br',
+ 'HTTP_ACCEPT_LANGUAGE': 'en-US,en;q=0.9',
+ 'HTTP_CACHE_CONTROL': 'max-age=0',
+ 'HTTP_CONNECTION': 'keep-alive',
+ 'HTTP_HOST': 'localhost:6001',
+ 'HTTP_UPGRADE_INSECURE_REQUESTS': '1',
+ 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36 OPR/50.0.2762.45',
+ 'PATH_INFO': '/',
+ 'QUERY_STRING': '',
+ 'REMOTE_ADDR': '127.0.0.1',
+ 'REQUEST_METHOD': 'GET',
+ 'SCRIPT_NAME': '',
+ 'SERVER_NAME': 'ALCARINPC',
+ 'SERVER_PORT': '6001',
+ 'SERVER_PROTOCOL': 'HTTP/1.1',
+ 'SERVER_SOFTWARE': 'waitress',
+ 'webob._cache_control': ('max-age=0', <CacheControl 'max-age=0'>),
+ 'webob._parsed_cookies': ({}, ''),
+ 'webob._parsed_query_vars': (GET([]), ''),
+ 'wsgi.errors': <open file '<stderr>', mode 'w' at 0x048AD0D0>,
+ 'wsgi.file_wrapper': <class 'waitress.buffers.ReadOnlyFileBasedBuffer'>,
+ 'wsgi.input': <_io.BytesIO object at 0x085421B0>,
+ 'wsgi.multiprocess': False,
+ 'wsgi.multithread': True,
+ 'wsgi.run_once': False,
+ 'wsgi.url_scheme': 'http',
+ 'wsgi.version': (1, 0)}
+
+
+PARAMETERS
+
+NestedMultiDict([])
+
+
+UNAUTHENTICATED USER
+
+None
+
+Traceback (most recent call last):
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\tweens.py", line 22, in excview_tween
+    response = handler(request)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\router.py", line 155, in handle_request
+    view_name
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\view.py", line 612, in _call_view
+    response = view_callable(context, request)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\viewderivers.py", line 461, in rendered_view
+    request, result, view_inst, context)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\renderers.py", line 432, in render_view
+    return self.render_to_response(response, system, request=request)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\renderers.py", line 455, in render_to_response
+    result = self.render(value, system_values, request=request)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\renderers.py", line 451, in render
+    result = renderer(value, system_values)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid_mako-1.0.2-py2.7.egg\pyramid_mako\__init__.py", line 156, in __call__
+    reraise(MakoRenderingException(errtext), None, exc_info[2])
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid_mako-1.0.2-py2.7.egg\pyramid_mako\__init__.py", line 148, in __call__
+    result = template.render_unicode(**system)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\template.py", line 471, in render_unicode
+    as_unicode=True)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 838, in _render
+    **_kwargs_for_callable(callable_, data))
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 873, in _render_context
+    _exec_template(inherit, lclcontext, args=args, kwargs=kwargs)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 899, in _exec_template
+    callable_(context, *args, **kwargs)
+  File "lati_templates_base_html", line 38, in render_body
+  File "lati_templates_main_html", line 76, in render_container
+MakoRenderingException: 
+
+Traceback (most recent call last):
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid_mako-1.0.2-py2.7.egg\pyramid_mako\__init__.py", line 148, in __call__
+    result = template.render_unicode(**system)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\template.py", line 471, in render_unicode
+    as_unicode=True)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 838, in _render
+    **_kwargs_for_callable(callable_, data))
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 873, in _render_context
+    _exec_template(inherit, lclcontext, args=args, kwargs=kwargs)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 899, in _exec_template
+    callable_(context, *args, **kwargs)
+  File "e:\!workspace\p\lati\projecilati\lati\templates\base.html", line 15, in render_body
+    <title>Wypo\u017cyczania sprz\u0119tu Wyoski Stok - <%block name="headerTitle"></%block></title>
+  File "e:\!workspace\p\lati\projecilati\lati\templates\main.html", line 11, in render_container
+    <li class="${'uk-block-primary uk-contrast' if session['env_type']=='S' else ''}"><a href="${request.route_path('enviro-change', type_='S')}"><i class="uk-icon-home"></i>&nbsp;SCC environments</a></li>
+TypeError: 'Undefined' object has no attribute '__getitem__'
+
+2018-01-07 22:30:24,736 
+
+'http://localhost:6001/'
+
+ENVIRONMENT
+
+{'HTTP_ACCEPT': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+ 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, br',
+ 'HTTP_ACCEPT_LANGUAGE': 'en-US,en;q=0.9',
+ 'HTTP_CACHE_CONTROL': 'no-cache',
+ 'HTTP_CONNECTION': 'keep-alive',
+ 'HTTP_HOST': 'localhost:6001',
+ 'HTTP_PRAGMA': 'no-cache',
+ 'HTTP_UPGRADE_INSECURE_REQUESTS': '1',
+ 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36 OPR/50.0.2762.45',
+ 'PATH_INFO': '/',
+ 'QUERY_STRING': '',
+ 'REMOTE_ADDR': '127.0.0.1',
+ 'REQUEST_METHOD': 'GET',
+ 'SCRIPT_NAME': '',
+ 'SERVER_NAME': 'ALCARINPC',
+ 'SERVER_PORT': '6001',
+ 'SERVER_PROTOCOL': 'HTTP/1.1',
+ 'SERVER_SOFTWARE': 'waitress',
+ 'webob._cache_control': ('no-cache', <CacheControl 'no-cache'>),
+ 'webob._parsed_cookies': ({}, ''),
+ 'webob._parsed_query_vars': (GET([]), ''),
+ 'wsgi.errors': <open file '<stderr>', mode 'w' at 0x048AD0D0>,
+ 'wsgi.file_wrapper': <class 'waitress.buffers.ReadOnlyFileBasedBuffer'>,
+ 'wsgi.input': <_io.BytesIO object at 0x08648AB0>,
+ 'wsgi.multiprocess': False,
+ 'wsgi.multithread': True,
+ 'wsgi.run_once': False,
+ 'wsgi.url_scheme': 'http',
+ 'wsgi.version': (1, 0)}
+
+
+PARAMETERS
+
+NestedMultiDict([])
+
+
+UNAUTHENTICATED USER
+
+None
+
+Traceback (most recent call last):
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\tweens.py", line 22, in excview_tween
+    response = handler(request)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\router.py", line 155, in handle_request
+    view_name
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\view.py", line 612, in _call_view
+    response = view_callable(context, request)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\viewderivers.py", line 461, in rendered_view
+    request, result, view_inst, context)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\renderers.py", line 432, in render_view
+    return self.render_to_response(response, system, request=request)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\renderers.py", line 455, in render_to_response
+    result = self.render(value, system_values, request=request)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\renderers.py", line 451, in render
+    result = renderer(value, system_values)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid_mako-1.0.2-py2.7.egg\pyramid_mako\__init__.py", line 156, in __call__
+    reraise(MakoRenderingException(errtext), None, exc_info[2])
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid_mako-1.0.2-py2.7.egg\pyramid_mako\__init__.py", line 148, in __call__
+    result = template.render_unicode(**system)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\template.py", line 471, in render_unicode
+    as_unicode=True)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 838, in _render
+    **_kwargs_for_callable(callable_, data))
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 873, in _render_context
+    _exec_template(inherit, lclcontext, args=args, kwargs=kwargs)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 899, in _exec_template
+    callable_(context, *args, **kwargs)
+  File "lati_templates_base_html", line 38, in render_body
+  File "lati_templates_main_html", line 76, in render_container
+MakoRenderingException: 
+
+Traceback (most recent call last):
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid_mako-1.0.2-py2.7.egg\pyramid_mako\__init__.py", line 148, in __call__
+    result = template.render_unicode(**system)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\template.py", line 471, in render_unicode
+    as_unicode=True)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 838, in _render
+    **_kwargs_for_callable(callable_, data))
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 873, in _render_context
+    _exec_template(inherit, lclcontext, args=args, kwargs=kwargs)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 899, in _exec_template
+    callable_(context, *args, **kwargs)
+  File "e:\!workspace\p\lati\projecilati\lati\templates\base.html", line 15, in render_body
+    <title>Wypo\u017cyczania sprz\u0119tu Wyoski Stok - <%block name="headerTitle"></%block></title>
+  File "e:\!workspace\p\lati\projecilati\lati\templates\main.html", line 11, in render_container
+    <li class="${'uk-block-primary uk-contrast' if session['env_type']=='S' else ''}"><a href="${request.route_path('enviro-change', type_='S')}"><i class="uk-icon-home"></i>&nbsp;SCC environments</a></li>
+TypeError: 'Undefined' object has no attribute '__getitem__'
+
+2018-01-07 22:30:27,052 
+
+'http://localhost:6001/'
+
+ENVIRONMENT
+
+{'HTTP_ACCEPT': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+ 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, br',
+ 'HTTP_ACCEPT_LANGUAGE': 'en-US,en;q=0.9',
+ 'HTTP_CACHE_CONTROL': 'no-cache',
+ 'HTTP_CONNECTION': 'keep-alive',
+ 'HTTP_HOST': 'localhost:6001',
+ 'HTTP_PRAGMA': 'no-cache',
+ 'HTTP_UPGRADE_INSECURE_REQUESTS': '1',
+ 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36 OPR/50.0.2762.45',
+ 'PATH_INFO': '/',
+ 'QUERY_STRING': '',
+ 'REMOTE_ADDR': '127.0.0.1',
+ 'REQUEST_METHOD': 'GET',
+ 'SCRIPT_NAME': '',
+ 'SERVER_NAME': 'ALCARINPC',
+ 'SERVER_PORT': '6001',
+ 'SERVER_PROTOCOL': 'HTTP/1.1',
+ 'SERVER_SOFTWARE': 'waitress',
+ 'webob._cache_control': ('no-cache', <CacheControl 'no-cache'>),
+ 'webob._parsed_cookies': ({}, ''),
+ 'webob._parsed_query_vars': (GET([]), ''),
+ 'wsgi.errors': <open file '<stderr>', mode 'w' at 0x048AD0D0>,
+ 'wsgi.file_wrapper': <class 'waitress.buffers.ReadOnlyFileBasedBuffer'>,
+ 'wsgi.input': <_io.BytesIO object at 0x087B4300>,
+ 'wsgi.multiprocess': False,
+ 'wsgi.multithread': True,
+ 'wsgi.run_once': False,
+ 'wsgi.url_scheme': 'http',
+ 'wsgi.version': (1, 0)}
+
+
+PARAMETERS
+
+NestedMultiDict([])
+
+
+UNAUTHENTICATED USER
+
+None
+
+Traceback (most recent call last):
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\tweens.py", line 22, in excview_tween
+    response = handler(request)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\router.py", line 155, in handle_request
+    view_name
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\view.py", line 612, in _call_view
+    response = view_callable(context, request)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\viewderivers.py", line 461, in rendered_view
+    request, result, view_inst, context)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\renderers.py", line 432, in render_view
+    return self.render_to_response(response, system, request=request)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\renderers.py", line 455, in render_to_response
+    result = self.render(value, system_values, request=request)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\renderers.py", line 451, in render
+    result = renderer(value, system_values)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid_mako-1.0.2-py2.7.egg\pyramid_mako\__init__.py", line 156, in __call__
+    reraise(MakoRenderingException(errtext), None, exc_info[2])
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid_mako-1.0.2-py2.7.egg\pyramid_mako\__init__.py", line 148, in __call__
+    result = template.render_unicode(**system)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\template.py", line 471, in render_unicode
+    as_unicode=True)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 838, in _render
+    **_kwargs_for_callable(callable_, data))
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 873, in _render_context
+    _exec_template(inherit, lclcontext, args=args, kwargs=kwargs)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 899, in _exec_template
+    callable_(context, *args, **kwargs)
+  File "lati_templates_base_html", line 38, in render_body
+  File "lati_templates_main_html", line 76, in render_container
+MakoRenderingException: 
+
+Traceback (most recent call last):
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid_mako-1.0.2-py2.7.egg\pyramid_mako\__init__.py", line 148, in __call__
+    result = template.render_unicode(**system)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\template.py", line 471, in render_unicode
+    as_unicode=True)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 838, in _render
+    **_kwargs_for_callable(callable_, data))
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 873, in _render_context
+    _exec_template(inherit, lclcontext, args=args, kwargs=kwargs)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 899, in _exec_template
+    callable_(context, *args, **kwargs)
+  File "e:\!workspace\p\lati\projecilati\lati\templates\base.html", line 15, in render_body
+    <title>Wypo\u017cyczania sprz\u0119tu Wyoski Stok - <%block name="headerTitle"></%block></title>
+  File "e:\!workspace\p\lati\projecilati\lati\templates\main.html", line 11, in render_container
+    <li class="${'uk-block-primary uk-contrast' if session['env_type']=='S' else ''}"><a href="${request.route_path('enviro-change', type_='S')}"><i class="uk-icon-home"></i>&nbsp;SCC environments</a></li>
+TypeError: 'Undefined' object has no attribute '__getitem__'
+
+2018-01-07 22:31:28,739 
+
+'http://localhost:6001/'
+
+ENVIRONMENT
+
+{'HTTP_ACCEPT': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+ 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, br',
+ 'HTTP_ACCEPT_LANGUAGE': 'en-US,en;q=0.9',
+ 'HTTP_CACHE_CONTROL': 'max-age=0',
+ 'HTTP_CONNECTION': 'keep-alive',
+ 'HTTP_HOST': 'localhost:6001',
+ 'HTTP_UPGRADE_INSECURE_REQUESTS': '1',
+ 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36 OPR/50.0.2762.45',
+ 'PATH_INFO': '/',
+ 'QUERY_STRING': '',
+ 'REMOTE_ADDR': '127.0.0.1',
+ 'REQUEST_METHOD': 'GET',
+ 'SCRIPT_NAME': '',
+ 'SERVER_NAME': 'ALCARINPC',
+ 'SERVER_PORT': '6001',
+ 'SERVER_PROTOCOL': 'HTTP/1.1',
+ 'SERVER_SOFTWARE': 'waitress',
+ 'webob._cache_control': ('max-age=0', <CacheControl 'max-age=0'>),
+ 'webob._parsed_cookies': ({}, ''),
+ 'webob._parsed_query_vars': (GET([]), ''),
+ 'wsgi.errors': <open file '<stderr>', mode 'w' at 0x048AD0D0>,
+ 'wsgi.file_wrapper': <class 'waitress.buffers.ReadOnlyFileBasedBuffer'>,
+ 'wsgi.input': <_io.BytesIO object at 0x08E33990>,
+ 'wsgi.multiprocess': False,
+ 'wsgi.multithread': True,
+ 'wsgi.run_once': False,
+ 'wsgi.url_scheme': 'http',
+ 'wsgi.version': (1, 0)}
+
+
+PARAMETERS
+
+NestedMultiDict([])
+
+
+UNAUTHENTICATED USER
+
+None
+
+Traceback (most recent call last):
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\tweens.py", line 22, in excview_tween
+    response = handler(request)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\router.py", line 155, in handle_request
+    view_name
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\view.py", line 612, in _call_view
+    response = view_callable(context, request)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\viewderivers.py", line 461, in rendered_view
+    request, result, view_inst, context)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\renderers.py", line 432, in render_view
+    return self.render_to_response(response, system, request=request)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\renderers.py", line 455, in render_to_response
+    result = self.render(value, system_values, request=request)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\renderers.py", line 451, in render
+    result = renderer(value, system_values)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid_mako-1.0.2-py2.7.egg\pyramid_mako\__init__.py", line 156, in __call__
+    reraise(MakoRenderingException(errtext), None, exc_info[2])
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid_mako-1.0.2-py2.7.egg\pyramid_mako\__init__.py", line 148, in __call__
+    result = template.render_unicode(**system)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\template.py", line 471, in render_unicode
+    as_unicode=True)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 838, in _render
+    **_kwargs_for_callable(callable_, data))
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 873, in _render_context
+    _exec_template(inherit, lclcontext, args=args, kwargs=kwargs)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 899, in _exec_template
+    callable_(context, *args, **kwargs)
+  File "lati_templates_base_html", line 26, in render_body
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\markupsafe-1.0-py2.7.egg\markupsafe\_native.py", line 22, in escape
+    return Markup(text_type(s)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 226, in __str__
+    raise NameError("Undefined")
+MakoRenderingException: 
+
+Traceback (most recent call last):
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid_mako-1.0.2-py2.7.egg\pyramid_mako\__init__.py", line 148, in __call__
+    result = template.render_unicode(**system)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\template.py", line 471, in render_unicode
+    as_unicode=True)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 838, in _render
+    **_kwargs_for_callable(callable_, data))
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 873, in _render_context
+    _exec_template(inherit, lclcontext, args=args, kwargs=kwargs)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 899, in _exec_template
+    callable_(context, *args, **kwargs)
+  File "e:\!workspace\p\lati\projecilati\lati\templates\base.html", line 11, in render_body
+    <link rel="stylesheet" type="text/css" href="${url}" /> % endfor
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\markupsafe-1.0-py2.7.egg\markupsafe\_native.py", line 22, in escape
+    return Markup(text_type(s)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 226, in __str__
+    raise NameError("Undefined")
+NameError: Undefined
+
+2018-01-07 22:31:33,176 
+
+'http://localhost:6001/'
+
+ENVIRONMENT
+
+{'HTTP_ACCEPT': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+ 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, br',
+ 'HTTP_ACCEPT_LANGUAGE': 'en-US,en;q=0.9',
+ 'HTTP_CACHE_CONTROL': 'max-age=0',
+ 'HTTP_CONNECTION': 'keep-alive',
+ 'HTTP_HOST': 'localhost:6001',
+ 'HTTP_UPGRADE_INSECURE_REQUESTS': '1',
+ 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36 OPR/50.0.2762.45',
+ 'PATH_INFO': '/',
+ 'QUERY_STRING': '',
+ 'REMOTE_ADDR': '127.0.0.1',
+ 'REQUEST_METHOD': 'GET',
+ 'SCRIPT_NAME': '',
+ 'SERVER_NAME': 'ALCARINPC',
+ 'SERVER_PORT': '6001',
+ 'SERVER_PROTOCOL': 'HTTP/1.1',
+ 'SERVER_SOFTWARE': 'waitress',
+ 'webob._cache_control': ('max-age=0', <CacheControl 'max-age=0'>),
+ 'webob._parsed_cookies': ({}, ''),
+ 'webob._parsed_query_vars': (GET([]), ''),
+ 'wsgi.errors': <open file '<stderr>', mode 'w' at 0x048AD0D0>,
+ 'wsgi.file_wrapper': <class 'waitress.buffers.ReadOnlyFileBasedBuffer'>,
+ 'wsgi.input': <_io.BytesIO object at 0x08D41D50>,
+ 'wsgi.multiprocess': False,
+ 'wsgi.multithread': True,
+ 'wsgi.run_once': False,
+ 'wsgi.url_scheme': 'http',
+ 'wsgi.version': (1, 0)}
+
+
+PARAMETERS
+
+NestedMultiDict([])
+
+
+UNAUTHENTICATED USER
+
+None
+
+Traceback (most recent call last):
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\tweens.py", line 22, in excview_tween
+    response = handler(request)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\router.py", line 155, in handle_request
+    view_name
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\view.py", line 612, in _call_view
+    response = view_callable(context, request)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\viewderivers.py", line 461, in rendered_view
+    request, result, view_inst, context)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\renderers.py", line 432, in render_view
+    return self.render_to_response(response, system, request=request)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\renderers.py", line 455, in render_to_response
+    result = self.render(value, system_values, request=request)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\renderers.py", line 451, in render
+    result = renderer(value, system_values)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid_mako-1.0.2-py2.7.egg\pyramid_mako\__init__.py", line 156, in __call__
+    reraise(MakoRenderingException(errtext), None, exc_info[2])
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid_mako-1.0.2-py2.7.egg\pyramid_mako\__init__.py", line 148, in __call__
+    result = template.render_unicode(**system)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\template.py", line 471, in render_unicode
+    as_unicode=True)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 838, in _render
+    **_kwargs_for_callable(callable_, data))
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 873, in _render_context
+    _exec_template(inherit, lclcontext, args=args, kwargs=kwargs)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 899, in _exec_template
+    callable_(context, *args, **kwargs)
+  File "lati_templates_base_html", line 26, in render_body
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\markupsafe-1.0-py2.7.egg\markupsafe\_native.py", line 22, in escape
+    return Markup(text_type(s)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 226, in __str__
+    raise NameError("Undefined")
+MakoRenderingException: 
+
+Traceback (most recent call last):
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid_mako-1.0.2-py2.7.egg\pyramid_mako\__init__.py", line 148, in __call__
+    result = template.render_unicode(**system)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\template.py", line 471, in render_unicode
+    as_unicode=True)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 838, in _render
+    **_kwargs_for_callable(callable_, data))
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 873, in _render_context
+    _exec_template(inherit, lclcontext, args=args, kwargs=kwargs)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 899, in _exec_template
+    callable_(context, *args, **kwargs)
+  File "e:\!workspace\p\lati\projecilati\lati\templates\base.html", line 11, in render_body
+    <link rel="stylesheet" type="text/css" href="${url}" /> % endfor
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\markupsafe-1.0-py2.7.egg\markupsafe\_native.py", line 22, in escape
+    return Markup(text_type(s)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 226, in __str__
+    raise NameError("Undefined")
+NameError: Undefined
+
+2018-01-07 22:31:34,486 
+
+'http://localhost:6001/'
+
+ENVIRONMENT
+
+{'HTTP_ACCEPT': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+ 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, br',
+ 'HTTP_ACCEPT_LANGUAGE': 'en-US,en;q=0.9',
+ 'HTTP_CACHE_CONTROL': 'no-cache',
+ 'HTTP_CONNECTION': 'keep-alive',
+ 'HTTP_HOST': 'localhost:6001',
+ 'HTTP_PRAGMA': 'no-cache',
+ 'HTTP_UPGRADE_INSECURE_REQUESTS': '1',
+ 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36 OPR/50.0.2762.45',
+ 'PATH_INFO': '/',
+ 'QUERY_STRING': '',
+ 'REMOTE_ADDR': '127.0.0.1',
+ 'REQUEST_METHOD': 'GET',
+ 'SCRIPT_NAME': '',
+ 'SERVER_NAME': 'ALCARINPC',
+ 'SERVER_PORT': '6001',
+ 'SERVER_PROTOCOL': 'HTTP/1.1',
+ 'SERVER_SOFTWARE': 'waitress',
+ 'webob._cache_control': ('no-cache', <CacheControl 'no-cache'>),
+ 'webob._parsed_cookies': ({}, ''),
+ 'webob._parsed_query_vars': (GET([]), ''),
+ 'wsgi.errors': <open file '<stderr>', mode 'w' at 0x048AD0D0>,
+ 'wsgi.file_wrapper': <class 'waitress.buffers.ReadOnlyFileBasedBuffer'>,
+ 'wsgi.input': <_io.BytesIO object at 0x08C66B40>,
+ 'wsgi.multiprocess': False,
+ 'wsgi.multithread': True,
+ 'wsgi.run_once': False,
+ 'wsgi.url_scheme': 'http',
+ 'wsgi.version': (1, 0)}
+
+
+PARAMETERS
+
+NestedMultiDict([])
+
+
+UNAUTHENTICATED USER
+
+None
+
+Traceback (most recent call last):
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\tweens.py", line 22, in excview_tween
+    response = handler(request)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\router.py", line 155, in handle_request
+    view_name
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\view.py", line 612, in _call_view
+    response = view_callable(context, request)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\viewderivers.py", line 461, in rendered_view
+    request, result, view_inst, context)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\renderers.py", line 432, in render_view
+    return self.render_to_response(response, system, request=request)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\renderers.py", line 455, in render_to_response
+    result = self.render(value, system_values, request=request)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\renderers.py", line 451, in render
+    result = renderer(value, system_values)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid_mako-1.0.2-py2.7.egg\pyramid_mako\__init__.py", line 156, in __call__
+    reraise(MakoRenderingException(errtext), None, exc_info[2])
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid_mako-1.0.2-py2.7.egg\pyramid_mako\__init__.py", line 148, in __call__
+    result = template.render_unicode(**system)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\template.py", line 471, in render_unicode
+    as_unicode=True)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 838, in _render
+    **_kwargs_for_callable(callable_, data))
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 873, in _render_context
+    _exec_template(inherit, lclcontext, args=args, kwargs=kwargs)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 899, in _exec_template
+    callable_(context, *args, **kwargs)
+  File "lati_templates_base_html", line 26, in render_body
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\markupsafe-1.0-py2.7.egg\markupsafe\_native.py", line 22, in escape
+    return Markup(text_type(s)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 226, in __str__
+    raise NameError("Undefined")
+MakoRenderingException: 
+
+Traceback (most recent call last):
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid_mako-1.0.2-py2.7.egg\pyramid_mako\__init__.py", line 148, in __call__
+    result = template.render_unicode(**system)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\template.py", line 471, in render_unicode
+    as_unicode=True)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 838, in _render
+    **_kwargs_for_callable(callable_, data))
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 873, in _render_context
+    _exec_template(inherit, lclcontext, args=args, kwargs=kwargs)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 899, in _exec_template
+    callable_(context, *args, **kwargs)
+  File "e:\!workspace\p\lati\projecilati\lati\templates\base.html", line 11, in render_body
+    <link rel="stylesheet" type="text/css" href="${url}" /> % endfor
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\markupsafe-1.0-py2.7.egg\markupsafe\_native.py", line 22, in escape
+    return Markup(text_type(s)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 226, in __str__
+    raise NameError("Undefined")
+NameError: Undefined
+
+2018-01-07 22:31:35,507 
+
+'http://localhost:6001/'
+
+ENVIRONMENT
+
+{'HTTP_ACCEPT': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+ 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, br',
+ 'HTTP_ACCEPT_LANGUAGE': 'en-US,en;q=0.9',
+ 'HTTP_CACHE_CONTROL': 'no-cache',
+ 'HTTP_CONNECTION': 'keep-alive',
+ 'HTTP_HOST': 'localhost:6001',
+ 'HTTP_PRAGMA': 'no-cache',
+ 'HTTP_UPGRADE_INSECURE_REQUESTS': '1',
+ 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36 OPR/50.0.2762.45',
+ 'PATH_INFO': '/',
+ 'QUERY_STRING': '',
+ 'REMOTE_ADDR': '127.0.0.1',
+ 'REQUEST_METHOD': 'GET',
+ 'SCRIPT_NAME': '',
+ 'SERVER_NAME': 'ALCARINPC',
+ 'SERVER_PORT': '6001',
+ 'SERVER_PROTOCOL': 'HTTP/1.1',
+ 'SERVER_SOFTWARE': 'waitress',
+ 'webob._cache_control': ('no-cache', <CacheControl 'no-cache'>),
+ 'webob._parsed_cookies': ({}, ''),
+ 'webob._parsed_query_vars': (GET([]), ''),
+ 'wsgi.errors': <open file '<stderr>', mode 'w' at 0x048AD0D0>,
+ 'wsgi.file_wrapper': <class 'waitress.buffers.ReadOnlyFileBasedBuffer'>,
+ 'wsgi.input': <_io.BytesIO object at 0x08E1D780>,
+ 'wsgi.multiprocess': False,
+ 'wsgi.multithread': True,
+ 'wsgi.run_once': False,
+ 'wsgi.url_scheme': 'http',
+ 'wsgi.version': (1, 0)}
+
+
+PARAMETERS
+
+NestedMultiDict([])
+
+
+UNAUTHENTICATED USER
+
+None
+
+Traceback (most recent call last):
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\tweens.py", line 22, in excview_tween
+    response = handler(request)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\router.py", line 155, in handle_request
+    view_name
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\view.py", line 612, in _call_view
+    response = view_callable(context, request)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\viewderivers.py", line 461, in rendered_view
+    request, result, view_inst, context)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\renderers.py", line 432, in render_view
+    return self.render_to_response(response, system, request=request)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\renderers.py", line 455, in render_to_response
+    result = self.render(value, system_values, request=request)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\renderers.py", line 451, in render
+    result = renderer(value, system_values)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid_mako-1.0.2-py2.7.egg\pyramid_mako\__init__.py", line 156, in __call__
+    reraise(MakoRenderingException(errtext), None, exc_info[2])
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid_mako-1.0.2-py2.7.egg\pyramid_mako\__init__.py", line 148, in __call__
+    result = template.render_unicode(**system)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\template.py", line 471, in render_unicode
+    as_unicode=True)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 838, in _render
+    **_kwargs_for_callable(callable_, data))
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 873, in _render_context
+    _exec_template(inherit, lclcontext, args=args, kwargs=kwargs)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 899, in _exec_template
+    callable_(context, *args, **kwargs)
+  File "lati_templates_base_html", line 26, in render_body
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\markupsafe-1.0-py2.7.egg\markupsafe\_native.py", line 22, in escape
+    return Markup(text_type(s)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 226, in __str__
+    raise NameError("Undefined")
+MakoRenderingException: 
+
+Traceback (most recent call last):
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid_mako-1.0.2-py2.7.egg\pyramid_mako\__init__.py", line 148, in __call__
+    result = template.render_unicode(**system)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\template.py", line 471, in render_unicode
+    as_unicode=True)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 838, in _render
+    **_kwargs_for_callable(callable_, data))
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 873, in _render_context
+    _exec_template(inherit, lclcontext, args=args, kwargs=kwargs)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 899, in _exec_template
+    callable_(context, *args, **kwargs)
+  File "e:\!workspace\p\lati\projecilati\lati\templates\base.html", line 11, in render_body
+    <link rel="stylesheet" type="text/css" href="${url}" /> % endfor
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\markupsafe-1.0-py2.7.egg\markupsafe\_native.py", line 22, in escape
+    return Markup(text_type(s)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 226, in __str__
+    raise NameError("Undefined")
+NameError: Undefined
+
+2018-01-07 22:31:50,122 
+
+'http://localhost:6001/'
+
+ENVIRONMENT
+
+{'HTTP_ACCEPT': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+ 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, br',
+ 'HTTP_ACCEPT_LANGUAGE': 'en-US,en;q=0.9',
+ 'HTTP_CACHE_CONTROL': 'max-age=0',
+ 'HTTP_CONNECTION': 'keep-alive',
+ 'HTTP_HOST': 'localhost:6001',
+ 'HTTP_UPGRADE_INSECURE_REQUESTS': '1',
+ 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36 OPR/50.0.2762.45',
+ 'PATH_INFO': '/',
+ 'QUERY_STRING': '',
+ 'REMOTE_ADDR': '127.0.0.1',
+ 'REQUEST_METHOD': 'GET',
+ 'SCRIPT_NAME': '',
+ 'SERVER_NAME': 'ALCARINPC',
+ 'SERVER_PORT': '6001',
+ 'SERVER_PROTOCOL': 'HTTP/1.1',
+ 'SERVER_SOFTWARE': 'waitress',
+ 'webob._cache_control': ('max-age=0', <CacheControl 'max-age=0'>),
+ 'webob._parsed_cookies': ({}, ''),
+ 'webob._parsed_query_vars': (GET([]), ''),
+ 'wsgi.errors': <open file '<stderr>', mode 'w' at 0x048AD0D0>,
+ 'wsgi.file_wrapper': <class 'waitress.buffers.ReadOnlyFileBasedBuffer'>,
+ 'wsgi.input': <_io.BytesIO object at 0x08A54420>,
+ 'wsgi.multiprocess': False,
+ 'wsgi.multithread': True,
+ 'wsgi.run_once': False,
+ 'wsgi.url_scheme': 'http',
+ 'wsgi.version': (1, 0)}
+
+
+PARAMETERS
+
+NestedMultiDict([])
+
+
+UNAUTHENTICATED USER
+
+None
+
+Traceback (most recent call last):
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\tweens.py", line 22, in excview_tween
+    response = handler(request)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\router.py", line 155, in handle_request
+    view_name
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\view.py", line 612, in _call_view
+    response = view_callable(context, request)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\viewderivers.py", line 461, in rendered_view
+    request, result, view_inst, context)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\renderers.py", line 432, in render_view
+    return self.render_to_response(response, system, request=request)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\renderers.py", line 455, in render_to_response
+    result = self.render(value, system_values, request=request)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\renderers.py", line 451, in render
+    result = renderer(value, system_values)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid_mako-1.0.2-py2.7.egg\pyramid_mako\__init__.py", line 156, in __call__
+    reraise(MakoRenderingException(errtext), None, exc_info[2])
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid_mako-1.0.2-py2.7.egg\pyramid_mako\__init__.py", line 148, in __call__
+    result = template.render_unicode(**system)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\template.py", line 471, in render_unicode
+    as_unicode=True)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 838, in _render
+    **_kwargs_for_callable(callable_, data))
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 873, in _render_context
+    _exec_template(inherit, lclcontext, args=args, kwargs=kwargs)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 899, in _exec_template
+    callable_(context, *args, **kwargs)
+  File "lati_templates_base_html", line 26, in render_body
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\markupsafe-1.0-py2.7.egg\markupsafe\_native.py", line 22, in escape
+    return Markup(text_type(s)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 226, in __str__
+    raise NameError("Undefined")
+MakoRenderingException: 
+
+Traceback (most recent call last):
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid_mako-1.0.2-py2.7.egg\pyramid_mako\__init__.py", line 148, in __call__
+    result = template.render_unicode(**system)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\template.py", line 471, in render_unicode
+    as_unicode=True)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 838, in _render
+    **_kwargs_for_callable(callable_, data))
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 873, in _render_context
+    _exec_template(inherit, lclcontext, args=args, kwargs=kwargs)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 899, in _exec_template
+    callable_(context, *args, **kwargs)
+  File "e:\!workspace\p\lati\projecilati\lati\templates\base.html", line 11, in render_body
+    <link rel="stylesheet" type="text/css" href="${url}" /> % endfor
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\markupsafe-1.0-py2.7.egg\markupsafe\_native.py", line 22, in escape
+    return Markup(text_type(s)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 226, in __str__
+    raise NameError("Undefined")
+NameError: Undefined
+
+2018-01-07 23:04:09,887 
+
+'http://localhost:6001/'
+
+ENVIRONMENT
+
+{'HTTP_ACCEPT': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+ 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, br',
+ 'HTTP_ACCEPT_LANGUAGE': 'en-US,en;q=0.9',
+ 'HTTP_CACHE_CONTROL': 'max-age=0',
+ 'HTTP_CONNECTION': 'keep-alive',
+ 'HTTP_HOST': 'localhost:6001',
+ 'HTTP_REFERER': 'http://localhost:6001/',
+ 'HTTP_UPGRADE_INSECURE_REQUESTS': '1',
+ 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36 OPR/50.0.2762.45',
+ 'PATH_INFO': '/',
+ 'QUERY_STRING': '',
+ 'REMOTE_ADDR': '127.0.0.1',
+ 'REQUEST_METHOD': 'GET',
+ 'SCRIPT_NAME': '',
+ 'SERVER_NAME': 'ALCARINPC',
+ 'SERVER_PORT': '6001',
+ 'SERVER_PROTOCOL': 'HTTP/1.1',
+ 'SERVER_SOFTWARE': 'waitress',
+ 'webob._cache_control': ('max-age=0', <CacheControl 'max-age=0'>),
+ 'webob._parsed_cookies': ({}, ''),
+ 'webob._parsed_query_vars': (GET([]), ''),
+ 'wsgi.errors': <open file '<stderr>', mode 'w' at 0x052ED0D0>,
+ 'wsgi.file_wrapper': <class 'waitress.buffers.ReadOnlyFileBasedBuffer'>,
+ 'wsgi.input': <_io.BytesIO object at 0x07A86F30>,
+ 'wsgi.multiprocess': False,
+ 'wsgi.multithread': True,
+ 'wsgi.run_once': False,
+ 'wsgi.url_scheme': 'http',
+ 'wsgi.version': (1, 0)}
+
+
+PARAMETERS
+
+NestedMultiDict([])
+
+
+UNAUTHENTICATED USER
+
+None
+
+Traceback (most recent call last):
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\tweens.py", line 22, in excview_tween
+    response = handler(request)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\router.py", line 155, in handle_request
+    view_name
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\view.py", line 612, in _call_view
+    response = view_callable(context, request)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\viewderivers.py", line 461, in rendered_view
+    request, result, view_inst, context)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\renderers.py", line 432, in render_view
+    return self.render_to_response(response, system, request=request)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\renderers.py", line 455, in render_to_response
+    result = self.render(value, system_values, request=request)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\renderers.py", line 451, in render
+    result = renderer(value, system_values)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid_mako-1.0.2-py2.7.egg\pyramid_mako\__init__.py", line 156, in __call__
+    reraise(MakoRenderingException(errtext), None, exc_info[2])
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid_mako-1.0.2-py2.7.egg\pyramid_mako\__init__.py", line 148, in __call__
+    result = template.render_unicode(**system)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\template.py", line 471, in render_unicode
+    as_unicode=True)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 838, in _render
+    **_kwargs_for_callable(callable_, data))
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 872, in _render_context
+    (inherit, lclcontext) = _populate_self_namespace(context, tmpl)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 814, in _populate_self_namespace
+    ret = template.module._mako_inherit(template, context)
+  File "lati_templates_main_html", line 25, in _mako_inherit
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 771, in _inherit_from
+    template = _lookup_template(context, uri, calling_uri)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 802, in _lookup_template
+    return lookup.get_template(uri)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid_mako-1.0.2-py2.7.egg\pyramid_mako\__init__.py", line 71, in get_template
+    if asset.exists():
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\path.py", line 412, in exists
+    return self.pkg_resources.resource_exists(self.pkg_name, self.path)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pkg_resources\__init__.py", line 1215, in resource_exists
+    return get_provider(package_or_requirement).has_resource(resource_name)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pkg_resources\__init__.py", line 440, in get_provider
+    __import__(moduleOrReq)
+MakoRenderingException: 
+
+Traceback (most recent call last):
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid_mako-1.0.2-py2.7.egg\pyramid_mako\__init__.py", line 148, in __call__
+    result = template.render_unicode(**system)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\template.py", line 471, in render_unicode
+    as_unicode=True)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 838, in _render
+    **_kwargs_for_callable(callable_, data))
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 872, in _render_context
+    (inherit, lclcontext) = _populate_self_namespace(context, tmpl)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 814, in _populate_self_namespace
+    ret = template.module._mako_inherit(template, context)
+  File "e:\!workspace\p\lati\projecilati\lati\templates\main.html", line 1, in _mako_inherit
+    # -*- coding: utf-8 -*-
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 771, in _inherit_from
+    template = _lookup_template(context, uri, calling_uri)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\mako-1.0.7-py2.7.egg\mako\runtime.py", line 802, in _lookup_template
+    return lookup.get_template(uri)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid_mako-1.0.2-py2.7.egg\pyramid_mako\__init__.py", line 71, in get_template
+    if asset.exists():
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pyramid-1.8.3-py2.7.egg\pyramid\path.py", line 412, in exists
+    return self.pkg_resources.resource_exists(self.pkg_name, self.path)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pkg_resources\__init__.py", line 1215, in resource_exists
+    return get_provider(package_or_requirement).has_resource(resource_name)
+  File "E:\!Workspace\P\LaTI\ProjeciLaTI\env\lib\site-packages\pkg_resources\__init__.py", line 440, in get_provider
+    __import__(moduleOrReq)
+ImportError: No module named dls
+
