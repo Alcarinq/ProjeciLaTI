@@ -27,15 +27,18 @@ from lati.models import Base
 from ..dblen import DBLimits
 
 class Test(Base):
-    __tablename__ = 'test'
+    __tablename__ = 'Test'
 
     id = Column(Integer, primary_key=True, index=True, autoincrement=True, unique=True)
-    testColumn = Column(DateTime(timezone=False), nullable=False, default='')
+    openHour = Column(UnicodeText(), nullable=True)
+    closeHour = Column(UnicodeText(), nullable=True)
+    rOpenHour = Column(UnicodeText(), nullable=True)
+    rCloseHour = Column(UnicodeText(), nullable=True)
 
     def __json__(self, request):
         return {
-            'code': self.code,
-            'description': self.description,
-            'is_admin': self.is_admin,
-            'membership' : self.membership
+            'openHour': self.openHour,
+            'closeHour': self.closeHour,
+            'rOpenHour': self.rOpenHour,
+            'rCloseHour': self.rCloseHour
         }
