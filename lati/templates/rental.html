@@ -1,0 +1,138 @@
+# -*- coding: utf-8 -*-
+<%inherit file="lati:templates/base.html"/>
+
+<%block name="container">
+	<div class="uk-container uk-container-center uk-margin-large-top uk-margin-large-bottom">
+        <div class="uk-width-medium-9-10 uk-row-first">
+        	<article class="uk-article">
+		<h1 class="uk-article-title">
+                    Wypożyczalnia
+                </h1>
+
+				<div>
+					%if 'group' in request.session:
+						<table class="uk-table">
+							<tr>
+								<th>Nazwa</th>
+								<th>Koszt wypożyczenia</th>
+								%if 'group' in request.session and 'admins' in request.session['group']:
+								<th>Wypożyczone przez</th>
+								<th>Wypożyczone do dnia</th>
+								<th>Kasuj wypożyczenie</th>
+								%endif
+								%if 'group' in request.session and not 'admins' in request.session['group']:
+								<th>Wypożycz</th>
+								%endif
+							</tr>
+							%for d in data:
+								<div id="my-id" class="uk-modal">
+									<div class="uk-modal-dialog">
+										<div class="uk-modal-header">Wpisz nazwę oraz wybierz datę do której chcesz wypożyczyć sprzęt <a class="uk-modal-close uk-close uk-float-right"></a></div>
+										<div class="uk-vertical-align uk-height-1-1">
+											<div class="uk-vertical-align-middle" style="width: 2250px;">
+												<form class="uk-panel uk-form" method="post">
+													<div class="uk-form-row">
+														Nazwa:
+														<input type="text" id="rent_by" value=""/><br/>
+													</div>
+													<div class="uk-form-row">
+														Data:   
+														<input type="text" id="rent_date" data-uk-datepicker="{minDate:getDate(), format:'DD.MM.YYYY'}"><br/>
+													</div>
+													<div class="uk-form-row">
+														<input class="uk-button uk-button-primary uk-float-right" type="submit" name="form.submitted" value="OK" onclick="add(${d.id})"/>
+													</div>
+												</form>
+											</div>
+										</div>
+									</div>
+								</div>
+								%if 'group' in request.session and not 'admins' in request.session['group'] and not d.rent or 'group' in request.session and 'admins' in request.session['group']:
+								<tr>
+									<td>
+										${d.name}
+									</td>
+									<td>
+										${d.price}
+									</td>
+									%if 'group' in request.session and 'admins' in request.session['group']:
+									<td>
+										%if d.rent_by is None:
+										-
+										%else:
+											${d.rent_by}
+										%endif
+									</td>
+									<td>
+										%if d.rent_date is None:
+										-
+										%else:
+											${d.rent_date}
+										%endif
+									</td>
+									<td>
+										%if d.rent:
+										<img id="xsign" src="static/images/xsign.png" onclick="remove(${d.id})"/>
+										%endif
+									</td>
+									%endif
+									<td>
+										%if 'group' in request.session and not 'admins' in request.session['group']:
+										<a href="#my-id" data-uk-modal>
+											<img id="ok" src="static/images/oksign.png"/>
+										</a>
+										%endif
+									</td>
+								</tr>
+								%endif
+							%endfor
+						</table>
+					%else:
+					Zaloguj się aby mieć dostęp do spisu sprzętu i możliwości wypożyczenia.
+					%endif
+				</div>
+        	</article>
+		</div>
+	</div>
+
+	<script>
+	function getDate()
+	{
+		var today = new Date();
+		var dd = today.getDate();
+		var mm = today.getMonth()+1;
+		var yyyy = today.getFullYear();
+
+		return today = dd+'-'+mm+'-'+yyyy
+	}
+	function remove(id)
+	{
+		$.ajax({
+        	type: "POST",
+        	url: "/remove_rental/"+id,
+        	dataType: "json",
+        	success: function(data) {
+				location.reload();
+            }, 
+    	})
+	}
+
+	function add(id)
+	{
+		$.ajax({
+        	type: "POST",
+        	url: "/add_rental/"+id,
+        	dataType: "json",
+        	data: {
+            	'rent_by': $("#rent_by").val(),
+            	'rent_date': $("#rent_date").val(),
+        	},
+        	success: function(data) {
+				location.reload();
+				alert("Sprzęt zamówiony");
+            }, 
+    	})
+	}
+	</script>
+
+</%block>

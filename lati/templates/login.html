@@ -1,0 +1,32 @@
+# -*- coding: utf-8 -*-
+<%inherit file="lati:templates/base.html"/>
+
+<%block name="container">
+	<div class="uk-container uk-container-center uk-margin-large-top uk-margin-large-bottom">
+        <div class="uk-width-medium-9-10 uk-row-first uk-text-center">
+        	<article class="uk-article">
+				<h1 class="uk-article-title">
+                    Panel logowania
+                </h1>
+
+                <div class="uk-vertical-align uk-height-1-1">
+                    <div class="uk-vertical-align-middle" style="width: 250px;">
+                        <form class="uk-panel uk-panel-box uk-form" action="${url}" method="post">
+                            <div class="uk-form-row">
+                                <input type="text" name="login" value="${login}"/><br/>
+                            </div>
+                            <div class="uk-form-row">
+                                <input type="password" name="password" value="${password}"/><br/>
+                            </div>
+                            <div class="uk-form-row">
+                                <input class="uk-width-1-1 uk-button uk-button-primary uk-button-large" type="submit" name="form.submitted" value="Login"/>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+        	</article>
+		</div>
+	</div>
+        
+</%block>

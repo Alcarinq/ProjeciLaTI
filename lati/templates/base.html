@@ -12,10 +12,28 @@
 	<link rel="stylesheet" type="text/css" href="${url}" />
 	% endfor
 
-	<title>Wypożyczania sprzętu Wyoski Stok - <%block name="headerTitle"></%block></title>
+	<title>Wypożyczania sprzętu Wysoki Stok - <%block name="headerTitle"></%block></title>
 </head>
 
 <body ng-app="latiApp" class="ng-cloak">
+	<a class="uk-navbar-brand uk-hidden-small" href="${request.route_path('home')}">
+		<img id="logo" src="static/images/logo.png"/>
+	</a>
+
+	<div>
+		<nav class="uk-navbar">
+    		<ul class="uk-navbar-nav">
+				<li><a href="${request.route_path('home')}">Strona główna</a></li>
+        		<li><a href="${request.route_path('rental')}">Wypożyczalnia</a></li>
+        		<li><a href="${request.route_path('weather')}">Sprawdź pogodę</a></li>
+				%if 'logged' in request.session:
+					<li><a href="${request.route_path('logoff')}">LogOff</a></li>
+				%else:
+					<li><a href="${request.route_path('login')}">Login</a></li>
+				%endif
+    		</ul>
+		</nav>
+	</div>
 	<%block name="container"></%block>
 	
 	% for url in webassets(request, 'jslibraries'):

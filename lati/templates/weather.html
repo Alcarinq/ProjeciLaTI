@@ -1,0 +1,25 @@
+# -*- coding: utf-8 -*-
+<%inherit file="lati:templates/base.html"/>
+
+<%block name="container">
+	<div class="uk-container uk-container-center uk-margin-large-top uk-margin-large-bottom">
+        <div class="uk-width-medium-9-10 uk-row-first">
+        	<article class="uk-article">
+				<h1 class="uk-article-title">
+                    Pogoda na stoku
+                </h1>
+                <div>
+
+                <div id="map">
+                        <a href="#" class="point1" tooltip="Punkt 1. Temperatura: ${point1}. Opady śniegu: ${point1fall}"></a>
+                        <a href="#" class="point2" tooltip="Punkt 2. Temperatura: ${point2}. Opady śniegu: ${point2fall}"></a>
+                        <a href="#" class="point3" tooltip="Punkt 3. Temperatura: ${point3}. Opady śniegu: ${point3fall}"></a>
+                        <a href="#" class="point4" tooltip="Punkt 4. Temperatura: ${point4}. Opady śniegu: ${point4fall}"></a>
+                        <a href="#" class="point5" tooltip="Punkt 5. Temperatura: ${point5}. Opady śniegu: ${point5fall}"></a>
+                </div>
+                
+        	</article>
+		</div>
+	</div>
+
+</%block>

@@ -42,3 +42,37 @@ class Test(Base):
             'rOpenHour': self.rOpenHour,
             'rCloseHour': self.rCloseHour
         }
+
+class Users(Base):
+    __tablename__ = 'Users'
+
+    id = Column(Integer, primary_key=True, index=True, autoincrement=True, unique=True)
+    login = Column(UnicodeText(), nullable=False)
+    password = Column(UnicodeText(), nullable=False)
+    group = Column(UnicodeText(), nullable=False)
+
+    def __json__(self, request):
+        return {
+            'login': self.login,
+            'password': self.password,
+            'group': self.group
+        }
+
+class Stuff(Base):
+    __tablename__ = 'Stuff'
+
+    id = Column(Integer, primary_key=True, index=True, autoincrement=True, unique=True)
+    name = Column(UnicodeText(), nullable=False)
+    price = Column(Integer, nullable=False)
+    rent = Column(Boolean, nullable=False)
+    rent_by = Column(UnicodeText(), nullable=True)
+    rent_date = Column(DateTime, nullable=True)
+
+    def __json__(self, request):
+        return {
+            'name': self.name,
+            'price': self.price,
+            'rent': self.rent,
+            'rent_by': self.rent_by,
+            'rent_date': self.rent_date
+        }

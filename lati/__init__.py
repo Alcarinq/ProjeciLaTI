@@ -26,6 +26,13 @@ def include_views(config):
     '''Package modules/portal/__init__
     '''
     config.add_route('home', '/')
+    config.add_route('weather', '/weather')
+    config.add_route('rental', '/rental')
+    config.add_route('login', '/login')
+    config.add_route('logoff', '/logoff')
+    
+    config.add_route('remove_rental', '/remove_rental/{id}')
+    config.add_route('add_rental', '/add_rental/{id}')
 
 def include_css(config):
     '''Definicja modulow CSS

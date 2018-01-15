@@ -21,6 +21,4 @@ class RootFactory(object):
         pass
 
 def groupfinder(userid, request):
-    """Find groups for a given user
-    """
-    return request.session.get('roles', [])
+    return request.session.get('group', [])
