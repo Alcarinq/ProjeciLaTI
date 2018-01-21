@@ -40,14 +40,7 @@ class DashboardView(object):
 
     @view_config(route_name='weather', renderer='lati:templates/weather.html')
     def weather(self):
-        fall = {'brak':'słabe', 'średnie':'mocne'}
-
-        return dict(
-            point1 = randint(-10, 2), point1fall = random.choice(fall.keys()),
-            point2 = randint(-10, 2), point2fall = random.choice(fall.keys()),
-            point3 = randint(-10, 2), point3fall = random.choice(fall.keys()),
-            point4 = randint(-10, 2), point4fall = random.choice(fall.keys()),
-            point5 = randint(-10, 2), point5fall = random.choice(fall.keys()))
+        return dict()
 
     @view_config(route_name='rental', renderer='lati:templates/rental.html')
     def rental(self):

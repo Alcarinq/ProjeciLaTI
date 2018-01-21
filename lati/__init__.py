@@ -49,7 +49,6 @@ def include_js(config):
         'js/jquery.nano.js',
         'js/uikit.js',
         'js/datepicker.js',
-        'js/lati.app.js',
         filters='jsmin', output='js/min-libs.%(version)s.js')
     config.add_webasset('jslibraries', libraries)
 

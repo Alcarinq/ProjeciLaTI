@@ -6,7 +6,7 @@
         <div class="uk-width-medium-9-10 uk-row-first">
         	<article class="uk-article">
 				<h1 class="uk-article-title">
-                    Pogoda na stoku
+                    Aktualna pogoda
                 </h1>
                 <div>
 
@@ -61,7 +61,7 @@
         	dataType: "json",
         	success: function(data) {
                          console.log(data);
-                         var factor = Math.pow(10, 2);
+                         var factor = Math.pow(10, 1);
                          var temp = Math.round((data.main.temp - 273.15)*factor)/factor;
                          infoWindow.setContent("Miejsce: " + data.name  + "\<br\>" +
                                                "Temperatura: " + temp + "c\<br\>" +
