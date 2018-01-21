@@ -10,16 +10,68 @@
                 </h1>
                 <div>
 
-                <div id="map">
-                        <a href="#" class="point1" tooltip="Punkt 1. Temperatura: ${point1}. Opady śniegu: ${point1fall}"></a>
-                        <a href="#" class="point2" tooltip="Punkt 2. Temperatura: ${point2}. Opady śniegu: ${point2fall}"></a>
-                        <a href="#" class="point3" tooltip="Punkt 3. Temperatura: ${point3}. Opady śniegu: ${point3fall}"></a>
-                        <a href="#" class="point4" tooltip="Punkt 4. Temperatura: ${point4}. Opady śniegu: ${point4fall}"></a>
-                        <a href="#" class="point5" tooltip="Punkt 5. Temperatura: ${point5}. Opady śniegu: ${point5fall}"></a>
-                </div>
+                <div id="map"></div>
                 
         	</article>
 		</div>
 	</div>
+
+
+<script>
+        var markers = [];
+        function myMap() {
+                
+                var mapOptions = {
+                        center: new google.maps.LatLng(54.5650205, 18.2473483),
+                        zoom: 10,
+                        navigationControl: false,
+                        mapTypeControl: false,
+                        scaleControl: false,
+                        streetViewControl: false,
+                        disableDefaultUI: true,
+                        mapTypeId: google.maps.MapTypeId.ROADMAP
+                }
+                
+                var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+
+                google.maps.event.addListener(map, "click", function (event) {
+                        clearMarkers();
+                        var marker = new google.maps.Marker({
+                                position: event.latLng, 
+                                map: map
+                        });
+                        
+                        markers.push(marker);
+                        var infowindow = new google.maps.InfoWindow();
+                        getWeather(marker.getPosition().lat(), marker.getPosition().lng(), infowindow);
+                        infowindow.open(map, marker);
+                }); 
+   
+        }
+        function clearMarkers() {
+                for (var i = 0; i < markers.length; i++) {
+                        markers[i].setMap(null); 
+                }
+        }
+        function getWeather(lat, lng, infoWindow)
+	{
+		$.ajax({
+        	type: "POST",
+        	url: "http://api.openweathermap.org/data/2.5/weather?lat="+lat+"&lon="+lng+"&APPID=c76b8bde68d76164823a986e3fa52cae",
+        	dataType: "json",
+        	success: function(data) {
+                         console.log(data);
+                         var factor = Math.pow(10, 2);
+                         var temp = Math.round((data.main.temp - 273.15)*factor)/factor;
+                         infoWindow.setContent("Miejsce: " + data.name  + "\<br\>" +
+                                               "Temperatura: " + temp + "c\<br\>" +
+                                               "Ciśnienie: " + data.main.pressure);
+            }, 
+    	})
+	}
+
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5Iw65AZ2S2NrpI64fL9pDuUhN8UkbjaE&callback=myMap"></script>
 
 </%block>
